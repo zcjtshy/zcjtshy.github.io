@@ -206,3 +206,9 @@ a, img{
   z-index: 2;
   font-size: 70px;
 }
+
+footer {
+  background: #4E342E;
+  color: #fff;
+  font-family: 'Shadows Into Light';
+}
