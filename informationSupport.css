@@ -1,0 +1,79 @@
+body {
+    max-width: 0 auto;
+	background: url("rustic.jpg")
+}
+
+h1 {
+  color: rgba(255,252,211,1);
+  font-family: 'Shadows Into Light'; 
+}
+
+h2 {
+	color: rgba(255,252,211,1);
+	font-family: 'Shadows Into Light';
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #4E342E;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: rgba(255,252,211,1);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'Shadows Into Light';
+}
+
+li a:hover {
+   background-color: #5F9EA0;
+}
+
+.General {
+	background-color: rgba(255,252,211,1);
+	width: cover;
+	border: none;
+	padding: 5px;
+	padding: 25px;
+}
+
+.Depression {
+	background-color: rgba(255,252,211,1);
+	width: cover;
+	border: none;
+	padding: 5px;
+	padding: 25px;
+}
+
+.Anxiety {
+	background-color: rgba(255,252,211,1);
+	width: cover;
+	border: none;
+	padding: 5px;
+	padding: 25px;
+}
+
+.OCD {
+	background-color: rgba(255,252,211,1);
+	width: cover;
+	border: none;
+	padding: 5px;
+	padding: 25px;
+}
+
+.BDD {
+	background-color: rgba(255,252,211,1);
+	width: cover;
+	border: none;
+	padding: 5px;
+	padding: 25px;
+}
