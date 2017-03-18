@@ -10,6 +10,10 @@
 .cursive-type {
   font-family: 'Caveat', cursive;
 }
+.material-icons{
+  height:20px;
+  width:20px;
+}
 
 /*#waterfall.standard { margin: 10px; list-style: none; }
 #waterfall.standard li {

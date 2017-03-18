@@ -136,18 +136,13 @@ function createStory(story) {
 		arrangeStories(story.id);
 	});
 
-	var shareButton = makeElement('i', {
-		className: 'material-icons',
-		textContent: 'share'
-	});
-
 	storyEl.append(storyImageEl);
 	storyEl.append(storyTitleEl);
 	storyEl.append(storyAuthorEl);
 	storyEl.append(storyContentEl);
-	storyEl.append(shareButton);
 	storyContainer.append(storyEl);
 	return storyContainer;
+	storyEl.append(shareButton);
 }
 
 // Map each story to a template
@@ -171,6 +166,32 @@ function arrangeStories(firstId) {
 		waterfall.append(template);
 	});
 }
+function deselect(e) {
+  $('.socialmediapopup').slideFadeToggle(function() {
+    e.removeClass('selected');
+  });    
+}
+
+$(function() {
+  $('.material-icons').on('click', function() {
+    if($(this).hasClass('selected')) {
+      deselect($(this));               
+    } else {
+      $(this).addClass('selected');
+      $('.socialmediapopup').slideFadeToggle();
+    }
+    return false;
+  });
+
+  $('.close').on('click', function() {
+    deselect($('.material-icons'));
+    return false;
+  });
+});
+
+$.fn.slideFadeToggle = function(easing, callback) {
+  return this.animate({ opacity: 'toggle', height: 'toggle' }, 'fast', easing, callback);
+};
 
 var waterfall = document.querySelector('#waterfall');
 waterfall.className = 'standard';
