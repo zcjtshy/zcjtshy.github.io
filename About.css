@@ -78,14 +78,29 @@ footer {
 .nav{
 	list-style: none;
   font-size: 20px;
-  font-family:Helvetica,sans-serif;
+  color: black;
+  /*background: #CD6600;*/
+  height: 60px;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.7;
+  font-family: 'work sans',sans-serif;
 }
-
-
-.nav li {
-	display: inline;
-	padding: 15px;
+  
+.nav li a{
+	display: block;
+  color: rgba(78,52,46,0.8);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
+.nav li a:hover{
+ background-color: #eeeddf;
+} 
+
 
 
 /*background: linear-gradient(rgba(0, 0, 0, 0),
