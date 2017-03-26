@@ -27,7 +27,7 @@ var stories = [
 		id: 3,
 		title: '',
 		name: 'Sarah',
-		image: '',
+		image: 'glass.jpg',
 		filter: [],
 		story: 'A shard of glass, from the bathroom window I smashed when I was 20. The object says more than I can put into words, because I could never really explain satisfactorily to anyone else why I did it. I felt constantly trapped at the time. I was sure my skull was contracting, slowly crushing my brain, and I needed to do something drastic to break free. I often thought about smashing windows. I’ve always been quite attached to buildings, and it seemed quite natural to regard a window as an extension of myself. So one day I put my fist through one. It was a double-glazed pane, and I still remember the ‘boom’ when the inner glass broke as the sound of freedom. My flatmates, who had to clean up the mess while I trod all over the broken glass in bare feet, were of an entirely different opinion.'
 	},
@@ -57,7 +57,7 @@ var stories = [
 	},
 	{
 		id: 7,
-		title: 'Plato\'s Republic',
+		title: 'Enlightening',
 		name:'Davidinio',
 		image:'plato.jpg',
 		filter:[],
@@ -77,7 +77,23 @@ var stories = [
 		name:'',
 		image:'./aboutblank.png',
 		filter:[],
-		story:'The title bar from the internet when I was googling memories to commit suicide'
+		story:'The title bar from the internet when I was googling methods to commit suicide'
+	},
+	{
+		id:10,
+		title: 'Escape',
+		name:'Reb',
+		image:'paperclip.jpg',
+		filter:['BPD'],
+		story:'I chose this object as it\'s where my addiction to self harm started. I remember being roughly 13 years old and hiding behind a sofa in my living room crying my eyes out as I had this overwhelming emotional pain sweep over me, my palms were sweaty and I was finding it hard to breathe as my heart pounded so fast and thoughts spun around uncontrollably in my mind! I had this paper clip in my hand at the time and one thought went through my head which changed everything, \'what if this emotional pain could be counteracted by physical pain?\' and with that thought I unraveled the paper clip took it to my wrist and for a moment I was free I had escaped! Little knowing that in reality a whole new battle had begun.'
+	},
+	{
+		id:11,
+		title:'New beginnings',
+		name:'Sophie',
+		image:'drum.jpg',
+		filter:['eating disorders'],
+		story:'I remember many years ago I was very ill and was in denial. My parents were absolutely mad at me and could not understand me. My dad even broke part of my drum set, something that I deeply treasured. I could vividly remember that scene when he was so infuriated, shouting and threatening to throw the instrument away. I just sat there, crying with angry tears, feeling helpless and not understood. Months later I agreed to be voluntarily sectioned and I met one of the most friendly people I have ever met in my life in the ward. The doctors and nurses understood that my music exam was coming up so they let me to take the drum set to a quiet room in the ward to practice. Everyone said I was talented. Being well enough to attend the exam became one of my biggest motivations in life then, and I ended up with high distinction. Memories (painful ones and joyful ones) came back to me every time I rehearse and practise, but it has now provided a new definition and narrative to my life.',
 	}
 ];
 
