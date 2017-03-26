@@ -19,15 +19,31 @@ $(document).ready(function(){
     		$(window).resize();
 	    })
 </script>
+<script> 
+	$(document).ready(function() {
+   	$('.tab-list').each(function(){
+		var $this = $(this);
+		var $tab = $this.find('li.active');
+		var $link = $tab.find('a');
+		var $panel = $($link.attr('href'));
+			$this.on('click','.tab-control',function(e){
+				e.preventDefault();
+				var $link = $(this);
+				var id = this.hash;
+					if (id && !$link.is('.active')){
+						$panel.removeClass('active');
+						$tab.removeClass('active');
+						$panel = $(id).addClass('active');
+						$tab = $link.parent().addClass('active');
+				}
+		});
+
+	});
+});
+	</script>
 <link href='bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css' rel='stylesheet'>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-<script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
-<script src='bootstrap-4.0.0-alpha.6-dist/js/bootstrap.js'>
-</script>
-<link href='bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="About.css">
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="About.css">
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 
 </head>
 <body> 
@@ -55,7 +71,12 @@ $(document).ready(function(){
 	</div>
 </tr>
 <tr>
-	<div class="text">	
+	<ul class="tab-list">
+		<li class="active"><a class="tab-control" href="#tab-1">Introduction</a></li>
+		<li><a class="tab-control" href="#tab-2">Our Story</a></li>
+		<li><a class="tab-control" href="#tab-3">Vision and Mission</a></li>
+	</ul>
+	<div class="tab-panel active" id="tab-1">	
 		<p> We believe everyone has a story to tell. <br/>
 		Yet, many stories are untold, hidden, or suppressed. <br/>
 		Soul Relics is an online platform on storytelling, objects and mental health. We are dedicated to respond to these issues using creative media and stories.<br/>
@@ -63,7 +84,20 @@ $(document).ready(function(){
 		Ultimately, we hope the platform will capture both unique experiences and common themes. We wish to provide a new way for people to tell and understand others’ stories. <br/> 
 		If you agree with the cause, please read our stories, and/or send yours.
 		</p> 
-	</div>
+		</div>
+		<div class="tab-panel" id="tab-2">
+		<p>In brief, the founder went to the Museum of Broken Relationships in Zagreb in summer 2015 and was amazed by how powerful and relatable objects and story-telling were. While we live in a society that focus on interpersonal relationships, have we paid enough attention to our relationships with ourselves? That planted the seeds of Soul Relics. </p>
+		</div>
+		<div class="tab-panel" id="tab-3">
+		The end-goal of this project aligns with the UN goal – “Wellbeing”. </br>
+		<h2> There is a need for story-telling. </h2> Story-telling is powerful in personal discovery and recovery as confirmed from research. Using stories as an alternative narrative to can help re-construct one’s identity and de-pathologise mental health issues. Some people do not know the appropriate channels to voice their struggles anonymously.</br> 
+		<h2> There is a need for creative story-telling and expression. </h2> Objects have been used as a form of story-telling for people who broke up, sex workers, homeless people, and older adults, but we have not heard anyone who uses it for mental health. </br>
+		<h2> There is a need for story-listening. </h2> There are lots of blogs and forums on mental health but they are scattered and not themed. General public may not be motivated to search and read them one by one. With a unified platform of story collection using objects, public can view the stories and objects and can relate to them. This is easier for the public to understand as drawings can be too abstract for some. With this idea coming live, it can help break down stigma and gives new meanings to the objects. </br>
+		<h2> There is a need for research and cross-disciplinary work. </h2> This project has various theoretical underpinnings that span across narrative psychology, anthropology, museum heritage studies (on object handling) and creative writing. Voices and stories are more powerful when they are presented in one platform. However, very little research has been conducted on this form of recovery-focused expression. This project can form the basis for this type of research. </br>
+		<h2> Mental health is everyone’s business. </h2> We hope that this will improve the contributor’s wellbeing by writing the stories in a different way, and the public can understand them and one another better. </br>
+		</div> 
+	
+
 	</tr>
 	<tr>
 	<div class="tablebottom">
@@ -104,6 +138,7 @@ $(document).ready(function(){
 	</td>
 	</div>
 	</tr>
+	
 	</tbody>
 	</table>
 
