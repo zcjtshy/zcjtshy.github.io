@@ -7,10 +7,10 @@ font-weight: 400;
 font-size: 30px;
 text-align: center;
 }
-.tab-panels .tab-panel.active{
+.tab-panel.active{
   display:block;
 }
-.tab-panels .tab-panel {
+.tab-panel {
   color: #4E342E;
   display:none;
   background: #eeeddf;
