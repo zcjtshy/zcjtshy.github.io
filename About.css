@@ -1,5 +1,5 @@
 .intro{
-line-height: 40px;
+line-height: 30px;
 padding:30px;
 margin-left: auto;
 margin-right: auto;
@@ -20,27 +20,30 @@ text-align: center;
   font-size: 14px;
   font-family:Helvetica,sans-serif;
   text-align: left;
-  padding: 30px 0 30px 30px;
+  padding: 30px;
+  border-radius: 0 0 10px 10px;
+  margin-top: 0;
  }
 
-.tab-list ul{
-  margin:auto;
+.tab-list {
+  margin:0;
   padding:0;
-  text-align:center;
+   display:flex;
   justify-content: center;
-}
+  }
 .tab-list li{
   list-style-type:none;
   display: inline-block;
-  background: #83706C;
-  padding: 10px;
+  background: #d3d1ad;
+  padding: 10px 30px 10px 30px;
   border-radius: 10px 10px 0 0;
-  color: #eeeddf;
+  color: rgba(78,52,46,0.8);
   font-weight:200;
   cursor: pointer;
   font-size:24px;
-  justify-content: center;
-  text-align: center;
+  margin:20px;
+  margin-bottom: 0;
+ 
 }
 .tab-list li:hover{
   background: #a6a59c;
