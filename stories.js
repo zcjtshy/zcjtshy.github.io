@@ -156,13 +156,13 @@ function createStory(story) {
 		arrangeStories(story.id);
 	});
 
-	storyEl.append(storyImageEl);
-	storyEl.append(storyTitleEl);
-	storyEl.append(storyAuthorEl);
-	storyEl.append(storyContentEl);
-	storyContainer.append(storyEl);
+	storyEl.appendChild(storyImageEl);
+	storyEl.appendChild(storyTitleEl);
+	storyEl.appendChild(storyAuthorEl);
+	storyEl.appendChild(storyContentEl);
+	storyContainer.appendChild(storyEl);
 	return storyContainer;
-	storyEl.append(shareButton);
+	storyEl.appendChild(shareButton);
 }
 
 // Map each story to a template
@@ -183,7 +183,7 @@ function arrangeStories(firstId) {
 		waterfall.removeChild(waterfall.lastChild);
 	}
 	storyTemplates.forEach(function(template) {
-		waterfall.append(template);
+		waterfall.appendChild(template);
 	});
 }
 function deselect(e) {
