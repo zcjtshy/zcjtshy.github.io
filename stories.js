@@ -121,7 +121,7 @@ var stories = [
 	}
 ];
 
-console.log(stories[11].story);
+console.log(stories[14].story);
 
 var hider = document.querySelector('.hider');
 hider.style.display = 'none';
