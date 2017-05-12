@@ -2,10 +2,23 @@ import { html5ModeConfig } from './configs/html5Mode.config';
 import { routerConfig } from './configs/router.config';
 
 import { homeComponent } from './components/home/home.component';
+import { dotnavComponent } from './components/home/dotnav.component';
+import { coverComponent } from './components/home/cover.component';
+import { aboutComponent } from './components/home/about.component';
+
 import { navComponent } from './components/nav/nav.component';
 
-angular.module('soulRelics', ['ui.router'])
+var app = angular.module('soulRelics', ['ui.router'])
   .config(html5ModeConfig)
-  .config(routerConfig)
-  .component('srNav', navComponent)
-  .component('srHome', homeComponent);
+  .config(routerConfig);
+
+var components = {
+  'srNav': navComponent,
+  'srHome': homeComponent,
+  'srCover': coverComponent,
+  'srDotnav': dotnavComponent,
+  'srAbout': aboutComponent,
+}
+
+// register all components
+Object.keys(components).forEach((name) => app.component(name, components[name]));

@@ -1,8 +1,8 @@
 import homeTemplate from './home.component.html';
 
-function homeComponentController(){
-  this.activeImage = 'http://soulrelicsmuseum.me/pebble.jpg';
-}
+
+var homeComponentController = function(){
+};
 
 export var homeComponent = {
   template: homeTemplate,

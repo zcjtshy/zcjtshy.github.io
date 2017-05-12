@@ -1,0 +1,15 @@
+<div id="cover" class="uk-cover-container" uk-height-viewport>
+  <img class="margin-large-top" ng-repeat="image in $ctrl.images" ng-src="{{image}}" uk-cover ng-class="{'uk-hidden': $ctrl.active != $index}">
+  <div class="uk-overlay uk-position-cover uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-light"
+    style="background: rgba(205, 102, 0, .8)">
+    <div class="uk-flex">
+      <h1 class="title">SOUL RELICS</h1>
+    </div>
+    <div class="uk-flex">
+      Soul Relics is an online platform on storytelling, objects and mental health.
+    </div>
+    <div class="uk-flex uk-width-1-2 uk-text-center uk-margin-top">
+      It is a gallery of photos of objects and personal stories that are related to a difficult time of your lives (A period of mental ill health); and/or something that helped you work towards recovery. That object can be anything of personal significance, or/and represent institutional barrier to mental health care, etc.
+    </div>
+  </div>
+</div>

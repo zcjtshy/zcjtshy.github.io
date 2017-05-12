@@ -1,7 +1,12 @@
-<div class="uk-container">
-  <div class="uk-inline">
-      <img ng-src="{{$ctrl.activeImage}}">
-      <div class="uk-overlay uk-position-cover uk-flex uk-flex-center uk-flex-middle uk-light"
-        style="background: rgba(205, 102, 0, 0.8)">hello</div>
+<div class="uk-position-relative">
+  <sr-cover></sr-cover>
+  <sr-about></sr-about>
+
+  <div class="uk-position-fixed uk-position-center-right uk-position-medium">
+    <sr-dotnav></sr-dotnav>
+  </div>
+
+  <div class="uk-position-fixed uk-position-top">
+    <sr-nav></sr-nav>
   </div>
 </div>
