@@ -5,6 +5,7 @@ import { homeComponent } from './components/home/home.component';
 import { dotnavComponent } from './components/home/dotnav.component';
 import { coverComponent } from './components/home/cover.component';
 import { aboutComponent } from './components/home/about.component';
+import { supportComponent } from './components/home/support.component';
 
 import { navComponent } from './components/nav/nav.component';
 
@@ -13,11 +14,12 @@ var app = angular.module('soulRelics', ['ui.router'])
   .config(routerConfig);
 
 var components = {
-  'srNav': navComponent,
-  'srHome': homeComponent,
-  'srCover': coverComponent,
-  'srDotnav': dotnavComponent,
-  'srAbout': aboutComponent,
+  'srNav'     : navComponent,
+  'srHome'    : homeComponent,
+  'srCover'   : coverComponent,
+  'srDotnav'  : dotnavComponent,
+  'srAbout'   : aboutComponent,
+  'srSupport' : supportComponent,
 }
 
 // register all components

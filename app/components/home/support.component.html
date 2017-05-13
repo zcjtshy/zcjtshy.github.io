@@ -1,0 +1,28 @@
+<div id="support" class="uk-cover-container" uk-height-viewport>
+  <img class="margin-large-top" src="http://soulrelicsmuseum.me/infosupport.jpg" uk-cover>
+  <div class="uk-overlay uk-position-cover uk-dark"
+    uk-scrollspy="cls:uk-animation-fade; offset-top: -80; repeat: true; delay: 500"
+    style="background: rgba(191, 255, 242, 0.8)">
+    <div style="margin-top: 80px">
+      <h1 class="title">Support and Information</h1>
+      Places to find mental health support online
+
+      <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+        <div ng-repeat="support in $ctrl.supports">
+          <div class="uk-card uk-margin-top" style="background: #FFF">
+            <div class="uk-card-header">
+              <h3 class="uk-card-title">{{ support.title }}</h3>
+              <p ng-if="support.meta" class="uk-text-meta">{{ support.meta }}</p>
+            </div>
+            <div class="uk-card-body">
+              <ul class="uk-list">
+                <li ng-repeat="(title, link) in support.links"><a href="{{link}}">{{title}}</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

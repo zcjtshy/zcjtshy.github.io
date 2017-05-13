@@ -1,3 +1,10 @@
+/* general */
+.transparent{
+  opacity: 0;
+}
+
+
+/* sr-home */
 sr-home .title{
  letter-spacing: 10px;
  color: black;
