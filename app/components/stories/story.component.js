@@ -13,7 +13,6 @@ var storyComponentController = ['$sce', '$location', function($sce, $location){
   $ctrl.$onInit = () => {
     modal_id = 'story' + $ctrl.story.id;
     $ctrl.story.short = $ctrl.story.story.split(' ', MAX_WORD_COUNT).join(' ');
-    if($ctrl.story.image) $ctrl.story.image = "http://soulrelicsmuseum.me/" + $ctrl.story.image; 
     $ctrl.story.name = $ctrl.story.name || '(Anonymous)';
 
     $ctrl.zoom = () => {
