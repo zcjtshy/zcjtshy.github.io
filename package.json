@@ -28,10 +28,10 @@
     "babel-preset-env": "^1.4.0",
     "html-loader": "^0.4.5",
     "lite-server": "^2.3.0",
-    "pushstate-server": "^3.0.0",
     "webpack": "^2.5.1"
   },
   "dependencies": {
+    "pushstate-server": "^3.0.0",
     "@uirouter/angularjs": "^1.0.3",
     "angular": "^1.6.4",
     "jquery": "^3.2.1",
