@@ -1,7 +1,7 @@
 <a ng-click="$ctrl.zoom()" href="#story{{$ctrl.story.id}}" uk-toggle>
   <div class="uk-card uk-card-default uk-card-hover uk-margin-medium-bottom" style="display: inline-block">
     <div class="uk-card-media-top" ng-if="$ctrl.story.image">
-      <img src="{{$ctrl.story.image}}">
+      <img ng-src="{{$ctrl.story.image}}">
     </div>
     <div class="uk-card-body">
       <h3 ng-if="$ctrl.story.title" class="uk-card-title">{{ $ctrl.story.title }}</h3>
