@@ -21,7 +21,7 @@
         <p>{{$ctrl.story.story}}</p>
         <span class="uk-text-meta">— {{$ctrl.story.name}}</span>
         <p>
-          <iframe src="{{$ctrl.facebook_share_iframe_url}}" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          <iframe ng-src="{{$ctrl.facebook_share_iframe_url}}" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
           <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{window.location.href}}" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         </p>
       </div>
