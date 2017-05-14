@@ -10,6 +10,7 @@ import { aboutComponent } from './components/home/about.component';
 import { supportComponent } from './components/home/support.component';
 
 import { storiesComponent } from './components/stories/stories.component';
+import { storyComponent } from './components/stories/story.component';
 
 import { navComponent } from './components/nav/nav.component';
 
@@ -26,6 +27,7 @@ var components = {
   'srAbout'   : aboutComponent,
   'srSupport' : supportComponent,
   'srStories' : storiesComponent,
+  'srStory'   : storyComponent,
 }
 
 // register all components

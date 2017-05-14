@@ -91,6 +91,8 @@ var _support = __webpack_require__(14);
 
 var _stories2 = __webpack_require__(16);
 
+var _story = __webpack_require__(20);
+
 var _nav = __webpack_require__(5);
 
 var app = angular.module('soulRelics', ['ui.router']).config(_html5Mode.html5ModeConfig).config(_router.routerConfig).service('storiesService', _stories.storiesService);
@@ -102,7 +104,8 @@ var components = {
   'srDotnav': _dotnav.dotnavComponent,
   'srAbout': _about.aboutComponent,
   'srSupport': _support.supportComponent,
-  'srStories': _stories2.storiesComponent
+  'srStories': _stories2.storiesComponent,
+  'srStory': _story.storyComponent
 };
 
 // register all components
@@ -309,13 +312,13 @@ var routerConfig = exports.routerConfig = ['$stateProvider', '$urlRouterProvider
 /* 8 */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"about\" class=\"uk-cover-container\" uk-height-viewport>\n  <img class=\"margin-large-top\" src=\"http://soulrelicsmuseum.me/aboutus.jpg\" uk-cover>\n  <div class=\"uk-overlay uk-position-cover uk-flex uk-flex-column uk-flex-left uk-dark\"\n    uk-scrollspy=\"cls:uk-animation-fade; offset-top: -80; repeat: true; delay: 500\"\n    style=\"background: rgba(255, 255, 255, 0.8)\">\n    <div style=\"margin-top: 80px\">\n      <div class=\"uk-flex\">\n        <h1 class=\"title\">About us</h1>\n      </div>\n    </div>\n    <div class=\"uk-overflow-auto\">\n      <div class=\"uk-flex\">\n        We believe everyone has a story to tell.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        Yet, many stories are untold, hidden, or suppressed.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        Soul Relics is an online platform on storytelling, objects and mental health. We are dedicated to respond to these issues using creative media and stories.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        We anchor our memories with objects. By creating an open platform for connections to form between our individual stories, and letting each person use objects to express a fragment of past/ present personal account of mental ill health and recovery, we hope to create a collective message that transcends barriers between people, and challenges the stigma surrounding mental health.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        Ultimately, we hope the platform will capture both unique experiences and common themes. We wish to provide a new way for people to tell and understand others’ stories.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        If you agree with the cause, please read our stories, and/or send yours. You can also look at the vision statement on Medium .\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        It is a gallery of photos of objects and personal stories that are related to a difficult time of your lives (A period of mental ill health); and/or something that helped you work towards recovery. That object can be anything of personal significance, or/and represent institutional barrier to mental health care, etc.\n      </div>\n    </div>\n  </div>\n</div>\n";
+module.exports = "<div id=\"about\" class=\"uk-cover-container\" uk-height-viewport>\n  <img class=\"margin-large-top\" src=\"http://soulrelicsmuseum.me/aboutus.jpg\" uk-cover>\n  <div class=\"uk-overlay uk-position-cover uk-flex uk-flex-column uk-flex-left uk-dark\"\n    uk-scrollspy=\"cls:uk-animation-fade; offset-top: -80; repeat: true; delay: 100\"\n    style=\"background: rgba(255, 255, 255, 0.8)\">\n    <div style=\"margin-top: 80px\">\n      <div class=\"uk-flex\">\n        <h1 class=\"title\">About us</h1>\n      </div>\n    </div>\n    <div class=\"uk-overflow-auto\">\n      <div class=\"uk-flex\">\n        We believe everyone has a story to tell.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        Yet, many stories are untold, hidden, or suppressed.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        Soul Relics is an online platform on storytelling, objects and mental health. We are dedicated to respond to these issues using creative media and stories.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        We anchor our memories with objects. By creating an open platform for connections to form between our individual stories, and letting each person use objects to express a fragment of past/ present personal account of mental ill health and recovery, we hope to create a collective message that transcends barriers between people, and challenges the stigma surrounding mental health.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        Ultimately, we hope the platform will capture both unique experiences and common themes. We wish to provide a new way for people to tell and understand others’ stories.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        If you agree with the cause, please read our stories, and/or send yours. You can also look at the vision statement on Medium .\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        It is a gallery of photos of objects and personal stories that are related to a difficult time of your lives (A period of mental ill health); and/or something that helped you work towards recovery. That object can be anything of personal significance, or/and represent institutional barrier to mental health care, etc.\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"cover\" class=\"uk-cover-container\" uk-height-viewport>\n  <img class=\"margin-large-top\" ng-repeat=\"image in $ctrl.images\" ng-src=\"{{image}}\" uk-cover ng-class=\"{'transparent': $ctrl.active != $index}\"\n  style=\"transition:opacity 1s linear;\">\n  <div class=\"uk-overlay uk-position-cover uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-light\"\n    style=\"background: rgba(205, 102, 0, .8); margin-top: 80px\">\n    <div class=\"uk-flex uk-text-center\">\n      <h1 class=\"title\">SOUL RELICS</h1>\n    </div>\n    <div class=\"uk-flex uk-text-center\">\n      Soul Relics is an online platform on storytelling, objects and mental health.\n    </div>\n    <div class=\"uk-flex uk-width-1-2@m uk-text-center uk-margin-top\">\n      It is a gallery of photos of objects and personal stories that are related to a difficult time of your lives (A period of mental ill health); and/or something that helped you work towards recovery. That object can be anything of personal significance, or/and represent institutional barrier to mental health care, etc.\n    </div>\n    <div class=\"uk-flex uk-margin-medium-top\">\n      <a href=\"#about\" uk-icon=\"icon: chevron-down; ratio: 2\" uk-scroll></a>\n    </div>\n  </div>\n</div>\n";
+module.exports = "<div id=\"home\" class=\"uk-cover-container\" uk-height-viewport>\n  <img class=\"margin-large-top\" ng-repeat=\"image in $ctrl.images\" ng-src=\"{{image}}\" uk-cover ng-class=\"{'transparent': $ctrl.active != $index}\"\n  style=\"transition:opacity 1s linear;\">\n  <div class=\"uk-overlay uk-position-cover uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-light\"\n    style=\"background: rgba(205, 102, 0, .8); margin-top: 80px\">\n    <div class=\"uk-flex uk-text-center\">\n      <h1 class=\"title\">SOUL RELICS</h1>\n    </div>\n    <div class=\"uk-flex uk-text-center\">\n      Soul Relics is an online platform on storytelling, objects and mental health.\n    </div>\n    <div class=\"uk-flex uk-width-1-2@m uk-text-center uk-margin-top\">\n      It is a gallery of photos of objects and personal stories that are related to a difficult time of your lives (A period of mental ill health); and/or something that helped you work towards recovery. That object can be anything of personal significance, or/and represent institutional barrier to mental health care, etc.\n    </div>\n    <div class=\"uk-flex uk-margin-medium-top\">\n      <a href=\"#about\" uk-icon=\"icon: chevron-down; ratio: 2\" uk-scroll></a>\n    </div>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 10 */
@@ -327,7 +330,7 @@ module.exports = "<div class=\"uk-dark\">\n  <ul class=\"uk-dotnav uk-dotnav-ver
 /* 11 */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"home\" class=\"uk-position-relative\">\n  <sr-cover></sr-cover>\n  <sr-about></sr-about>\n  <sr-support></sr-support>\n\n  <div class=\"uk-position-fixed uk-position-center-right uk-position-medium uk-visible@m\">\n    <sr-dotnav></sr-dotnav>\n  </div>\n\n  <div class=\"uk-position-fixed uk-position-top\">\n    <sr-nav></sr-nav>\n  </div>\n</div>\n";
+module.exports = "<div class=\"uk-position-relative\">\n  <sr-cover></sr-cover>\n  <sr-about></sr-about>\n  <sr-support></sr-support>\n\n  <div class=\"uk-position-fixed uk-position-center-right uk-position-medium uk-visible@m\">\n    <sr-dotnav></sr-dotnav>\n  </div>\n\n  <div class=\"uk-position-fixed uk-position-top\">\n    <sr-nav></sr-nav>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 12 */
@@ -405,7 +408,7 @@ var supportComponent = exports.supportComponent = {
 /* 15 */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"support\" class=\"uk-cover-container\" uk-height-viewport>\n  <img class=\"margin-large-top\" src=\"http://soulrelicsmuseum.me/infosupport.jpg\" uk-cover>\n  <div class=\"uk-overlay uk-position-cover uk-dark uk-flex uk-flex-column \"\n    uk-scrollspy=\"cls:uk-animation-fade; offset-top: -80; repeat: true; delay: 500\"\n    style=\"background: rgba(191, 255, 242, 0.8)\">\n    <div style=\"margin-top: 80px\">\n      <h1 class=\"title\">Support and Information</h1>\n      Places to find mental health support online\n    </div>\n    <div class=\"uk-overflow-auto\">\n\n      <div class=\"uk-child-width-1-3@m uk-grid-small uk-grid-match\" uk-grid>\n        <div ng-repeat=\"support in $ctrl.supports\">\n          <div class=\"uk-card uk-margin-top\" style=\"background: #FFF\">\n            <div class=\"uk-card-header\">\n              <h3 class=\"uk-card-title\">{{ support.title }}</h3>\n              <p ng-if=\"support.meta\" class=\"uk-text-meta\">{{ support.meta }}</p>\n            </div>\n            <div class=\"uk-card-body\">\n              <ul class=\"uk-list\">\n                <li ng-repeat=\"(title, link) in support.links\"><a href=\"{{link}}\">{{title}}</a></li>\n              </ul>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n";
+module.exports = "<div id=\"support\" class=\"uk-cover-container\" uk-height-viewport>\n  <img class=\"margin-large-top\" src=\"http://soulrelicsmuseum.me/infosupport.jpg\" uk-cover>\n  <div class=\"uk-overlay uk-position-cover uk-dark uk-flex uk-flex-column \"\n    uk-scrollspy=\"cls:uk-animation-fade; offset-top: -80; repeat: true; delay: 100\"\n    style=\"background: rgba(191, 255, 242, 0.8)\">\n    <div style=\"margin-top: 80px\">\n      <h1 class=\"title\">Support and Information</h1>\n      Places to find mental health support online\n    </div>\n    <div class=\"uk-overflow-auto\">\n\n      <div class=\"uk-child-width-1-3@m uk-grid-small uk-grid-match\" uk-grid>\n        <div ng-repeat=\"support in $ctrl.supports\">\n          <div class=\"uk-card uk-margin-top\" style=\"background: #FFF\">\n            <div class=\"uk-card-header\">\n              <h3 class=\"uk-card-title\">{{ support.title }}</h3>\n              <p ng-if=\"support.meta\" class=\"uk-text-meta\">{{ support.meta }}</p>\n            </div>\n            <div class=\"uk-card-body\">\n              <ul class=\"uk-list\">\n                <li ng-repeat=\"(title, link) in support.links\"><a href=\"{{link}}\">{{title}}</a></li>\n              </ul>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 16 */
@@ -426,8 +429,10 @@ var _storiesComponent2 = _interopRequireDefault(_storiesComponent);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var storiesComponentController = ['storiesService', function (storiesService) {
+  var $ctrl = this;
+  $ctrl.stories = [];
   storiesService.getStories().then(function (stories) {
-    console.log(stories);
+    $ctrl.stories = stories;
   });
 }];
 
@@ -440,7 +445,7 @@ var storiesComponent = exports.storiesComponent = {
 /* 17 */
 /***/ (function(module, exports) {
 
-module.exports = "hi\n";
+module.exports = "<div style=\"margin-top: 100px\">\n  <div class=\"uk-container uk-container-large\">\n    <div class=\"uk-column-1-2@m uk-column-1-3@l uk-column-1-4@xl\">\n      <sr-story ng-repeat=\"story in $ctrl.stories\" story=\"story\"></sr-story>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"uk-position-fixed uk-position-top\">\n  <sr-nav></sr-nav>\n</div>\n";
 
 /***/ }),
 /* 18 */
@@ -579,6 +584,69 @@ var storiesService = exports.storiesService = [function () {
     return Promise.resolve(_stories.stories);
   };
 }];
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.storyComponent = undefined;
+
+var _storyComponent = __webpack_require__(21);
+
+var _storyComponent2 = _interopRequireDefault(_storyComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var MAX_WORD_COUNT = 50;
+
+var storyComponentController = ['$sce', '$location', function ($sce, $location) {
+  var modal_id;
+  var $ctrl = this;
+  $ctrl.zoomed = false;
+
+  $ctrl.facebook_share_iframe_url = $sce.trustAsResourceUrl('https://www.facebook.com/plugins/share_button.php?href=' + encodeURIComponent(window.location.href) + '&layout=button&size=small&mobile_iframe=true&width=59&height=20');
+
+  $ctrl.$onInit = function () {
+    modal_id = 'story' + $ctrl.story.id;
+    $ctrl.story.short = $ctrl.story.story.split(' ', MAX_WORD_COUNT).join(' ');
+    if ($ctrl.story.image) $ctrl.story.image = "http://soulrelicsmuseum.me/" + $ctrl.story.image;
+    $ctrl.story.name = $ctrl.story.name || '(Anonymous)';
+
+    $ctrl.zoom = function () {
+      $location.hash(modal_id);
+      $ctrl.zoomed = true;
+    };
+  };
+
+  // set timeout with 0 so that the listening is registered when all the DOM are rendered
+  setTimeout(function () {
+    $('#' + modal_id).on('hidden', function () {
+      window.location.hash = '';
+      $ctrl.zoomed = false;
+    });
+    if (modal_id === $location.hash()) $('a[href="#' + modal_id + '"]').trigger('click');
+  }, 0);
+}];
+
+var storyComponent = exports.storyComponent = {
+  bindings: {
+    story: '='
+  },
+  template: _storyComponent2.default,
+  controller: storyComponentController
+};
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports) {
+
+module.exports = "<a ng-click=\"$ctrl.zoom()\" href=\"#story{{$ctrl.story.id}}\" uk-toggle>\n  <div class=\"uk-card uk-card-default uk-card-hover uk-margin-medium-bottom\" style=\"display: inline-block\">\n    <div class=\"uk-card-media-top\" ng-if=\"$ctrl.story.image\">\n      <img src=\"{{$ctrl.story.image}}\">\n    </div>\n    <div class=\"uk-card-body\">\n      <h3 ng-if=\"$ctrl.story.title\" class=\"uk-card-title\">{{ $ctrl.story.title }}</h3>\n      <p>{{ $ctrl.story.short }}</p>\n      <span ng-if=\"$ctrl.story.name\" class=\"uk-text-meta\">— {{ $ctrl.story.name }}</span>\n    </div>\n  </div>\n</a>\n\n<div id=\"story{{$ctrl.story.id}}\" ng-class=\"{'uk-modal-full': $ctrl.story.image}\" uk-modal>\n  <div ng-if=\"$ctrl.zoomed && $ctrl.story.image\" class=\"uk-modal-dialog\">\n    <button class=\"uk-modal-close-full uk-close-large\" type=\"button\" uk-close></button>\n    <div class=\"uk-grid-collapse uk-child-width-1-2@s uk-flex-middle\" uk-grid>\n      <div class=\"uk-background-cover\" style=\"background-image: url('{{$ctrl.story.image}}');\" uk-height-viewport></div>\n      <div class=\"uk-padding-large\">\n        <h1>{{$ctrl.story.title}}</h1>\n        <p>{{$ctrl.story.story}}</p>\n        <span class=\"uk-text-meta\">— {{$ctrl.story.name}}</span>\n        <p>\n          <iframe src=\"{{$ctrl.facebook_share_iframe_url}}\" width=\"59\" height=\"20\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\"></iframe>\n          <a href=\"https://twitter.com/share\" class=\"twitter-share-button\" data-url=\"{{window.location.href}}\" data-show-count=\"false\">Tweet</a><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n        </p>\n      </div>\n    </div>\n  </div>\n\n  <div ng-if=\"$ctrl.zoomed && !$ctrl.story.image\" class=\"uk-modal-dialog uk-modal-body\">\n    <button class=\"uk-modal-close-default\" type=\"button\" uk-close></button>\n    <h2 class=\"uk-modal-title\">{{$ctrl.story.title}}</h2>\n    <p>{{$ctrl.story.story}}</p>\n    <span class=\"uk-text-meta\">— {{$ctrl.story.name}}</span>\n    <p>\n      <iframe src=\"{{$ctrl.facebook_share_iframe_url}}\" width=\"59\" height=\"20\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\"></iframe>\n      <a href=\"https://twitter.com/share\" class=\"twitter-share-button\" data-url=\"{{window.location.href}}\" data-show-count=\"false\">Tweet</a><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n    </p>\n  </div>\n</div>\n";
 
 /***/ })
 /******/ ]);

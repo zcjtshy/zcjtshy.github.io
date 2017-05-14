@@ -1,0 +1,41 @@
+<a ng-click="$ctrl.zoom()" href="#story{{$ctrl.story.id}}" uk-toggle>
+  <div class="uk-card uk-card-default uk-card-hover uk-margin-medium-bottom" style="display: inline-block">
+    <div class="uk-card-media-top" ng-if="$ctrl.story.image">
+      <img src="{{$ctrl.story.image}}">
+    </div>
+    <div class="uk-card-body">
+      <h3 ng-if="$ctrl.story.title" class="uk-card-title">{{ $ctrl.story.title }}</h3>
+      <p>{{ $ctrl.story.short }}</p>
+      <span ng-if="$ctrl.story.name" class="uk-text-meta">— {{ $ctrl.story.name }}</span>
+    </div>
+  </div>
+</a>
+
+<div id="story{{$ctrl.story.id}}" ng-class="{'uk-modal-full': $ctrl.story.image}" uk-modal>
+  <div ng-if="$ctrl.zoomed && $ctrl.story.image" class="uk-modal-dialog">
+    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+    <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+      <div class="uk-background-cover" style="background-image: url('{{$ctrl.story.image}}');" uk-height-viewport></div>
+      <div class="uk-padding-large">
+        <h1>{{$ctrl.story.title}}</h1>
+        <p>{{$ctrl.story.story}}</p>
+        <span class="uk-text-meta">— {{$ctrl.story.name}}</span>
+        <p>
+          <iframe src="{{$ctrl.facebook_share_iframe_url}}" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{window.location.href}}" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div ng-if="$ctrl.zoomed && !$ctrl.story.image" class="uk-modal-dialog uk-modal-body">
+    <button class="uk-modal-close-default" type="button" uk-close></button>
+    <h2 class="uk-modal-title">{{$ctrl.story.title}}</h2>
+    <p>{{$ctrl.story.story}}</p>
+    <span class="uk-text-meta">— {{$ctrl.story.name}}</span>
+    <p>
+      <iframe src="{{$ctrl.facebook_share_iframe_url}}" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{window.location.href}}" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </p>
+  </div>
+</div>
