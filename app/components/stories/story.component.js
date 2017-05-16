@@ -24,7 +24,7 @@ var storyComponentController = ['$sce', '$location', function($sce, $location){
   // set timeout with 0 so that the listening is registered when all the DOM are rendered
   setTimeout(() => {
     $(`#${modal_id}`).on('hidden', function(){
-      window.location.hash = '';
+      window.location.hash = '_';
       $ctrl.zoomed = false;
     });
     if(modal_id === $location.hash()) $(`a[href="#${modal_id}"]`).trigger('click');
