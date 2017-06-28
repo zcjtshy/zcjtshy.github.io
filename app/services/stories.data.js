@@ -1,9 +1,10 @@
+import { requireImage } from '../webpack-require';
 export var stories = [
   {
     id: 0,
     title: 'A Remote Control',
     name: '',
-    image:'./remotecontrol.png',
+    image:'remotecontrol.png',
     filter: [],
     story: 'Because I used to steal them when I had OCD to save the people from mind poison and keep the trajectories of their life force. I don’t do it (much) anymore – but I own over 267 remote controls – sorry!'
   },
@@ -11,7 +12,7 @@ export var stories = [
     id: 1,
     title: '138',
     name: 'Sarah',
-    image: './flower.png',
+    image: 'flower.png',
     filter: ['stress'],
     story: 'I had left my job due to severe stress and did not have a job to go to. I was very low and lacking in self-confidence. I started to make myself go for little local walks from my home in the middle of the city. In places where there were lots of people I felt lost, they all seemed full of purpose and direction compared to me. I didn\'t belong. Then I started to notice small pockets of nature that were managing to thrive in harsh conditions. Noticing and then photographing this nature in the urban environment gave me a focus and, looking back, I suppose was a kind of metaphor for hope in bleak surroundings. It was a kind of mindfulness that enabled me to connect again. This photograph is one of those I took during this time of a beautiful lilac blossom growing in a parking bay on the estate where I live. '
   },
@@ -75,7 +76,7 @@ export var stories = [
     id: 9,
     title:'Blank',
     name:'',
-    image:'./aboutblank.png',
+    image:'aboutblank.png',
     filter:[],
     story:'The title bar from the internet when I was googling methods to commit suicide'
   },
@@ -139,7 +140,7 @@ export var stories = [
       id:17,
       title:'Tennis',
       name:'Amy',
-      image:'./tennis.png',
+      image:'tennis.png',
       filter:['grief'],
       story:'The day I lost my Pappa the world felt like too much to handle. I was overwhelmed by shock and grief but in that time a helpline volunteer explained to me about how a tennis ball would help me feel better. On the first day grief feels like a tennis ball in a jam jar. It takes over and fills every part. After some time it feels like the tennis ball has moved into a water jug. There is more room and the greif takes slightly less of your thoughts and life. The next time you notice that the tennis ball has moved to a drawer. It is still there but other things start to come into focus. Eventually the tennis ball is just in the same room or house as you. The hurt stays the same but it becomes a smaller part of life as you learn to manage it.'
     }
@@ -147,5 +148,5 @@ export var stories = [
 
 // append each image with the directory
 stories.forEach((s) => {
-  if(s.image) s.image = '/images/' + s.image;
+  if(s.image) s.image = requireImage(s.image);
 });

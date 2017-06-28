@@ -1,10 +1,8 @@
 import coverTemplate from './cover.component.html';
-
-const pathToImages = require.context('../../../images', true);
-
+import { requireImage } from '../../webpack-require';
 
 var coverComponentController = ['$interval', function($interval){
-  this.images = ['pebble.jpg', 'filippa.jpg', 'remotecontrol.png', 'plato.jpg', 'aboutblank.png'].map((f) => '/dist/' + pathToImages('./' + f));
+  this.images = ['pebble.jpg', 'filippa.jpg', 'remotecontrol.png', 'plato.jpg', 'aboutblank.png'].map((f) => requireImage(f));
   this.active = 0;
   $interval(() => {
     this.active = (this.active + 1) % this.images.length
