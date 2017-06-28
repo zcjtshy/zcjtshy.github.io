@@ -1,11 +1,9 @@
-<a ng-click="$ctrl.zoom()" href="#story{{$ctrl.story.id}}" uk-toggle>
-  <sr-card
-    image="{{$ctrl.story.image}}"
-    title="{{$ctrl.story.title}}"
-    body="{{$ctrl.story.short}}"
-    meta="— {{$ctrl.story.name}}">
-  </sr-card>
-</a>
+<sr-card ng-click="$ctrl.zoom()" href="#story{{$ctrl.story.id}}" style="cursor: pointer" uk-toggle
+  image="{{$ctrl.story.image}}"
+  title="{{$ctrl.story.title}}"
+  body="{{$ctrl.story.short}}"
+  meta="— {{$ctrl.story.name}}">
+</sr-card>
 
 <div id="story{{$ctrl.story.id}}" ng-class="{'uk-modal-full': $ctrl.story.image}" uk-modal>
   <div ng-if="$ctrl.zoomed && $ctrl.story.image" class="uk-modal-dialog">

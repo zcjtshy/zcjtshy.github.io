@@ -3719,7 +3719,9 @@ var storiesComponentController = ['storiesService', function (storiesService) {
   var $ctrl = this;
   $ctrl.stories = [];
   storiesService.getStories().then(function (stories) {
-    $ctrl.stories = stories;
+    $ctrl.stories = stories.filter(function (s) {
+      return s.image;
+    });
   });
 }];
 
@@ -8092,7 +8094,7 @@ module.exports = __webpack_require__(24);
 /* 312 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"uk-card uk-card-default uk-card-hover uk-margin-medium-bottom\" style=\"display: inline-block\">\n  <div class=\"uk-card-media-top\" ng-if=\"$ctrl.image\">\n    <img ng-src=\"{{$ctrl.image}}\">\n  </div>\n  <div class=\"uk-card-body\">\n    <h3 ng-if=\"$ctrl.title\" class=\"uk-card-title\">{{ $ctrl.title }}</h3>\n    <p>{{ $ctrl.body }}</p>\n    <span ng-if=\"$ctrl.meta\" class=\"uk-text-meta\">{{ $ctrl.meta }}</span>\n  </div>\n</div>\n";
+module.exports = "<div class=\"uk-card uk-card-default uk-card-hover uk-margin-medium-bottom\" style=\"display: inline-block\">\n  <div class=\"uk-card-media-top\" ng-if=\"$ctrl.image\">\n    <img style=\"transform: none\" ng-src=\"{{$ctrl.image}}\">\n  </div>\n  <div class=\"uk-card-body\">\n    <h3 ng-if=\"$ctrl.title\" class=\"uk-card-title\">{{ $ctrl.title }}</h3>\n    <p>{{ $ctrl.body }}</p>\n    <span ng-if=\"$ctrl.meta\" class=\"uk-text-meta\">{{ $ctrl.meta }}</span>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 313 */
@@ -8146,13 +8148,13 @@ module.exports = "<a\n  href=\"https://twitter.com/share\"\n  class=\"twitter-sh
 /* 321 */
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"margin-top: 100px\">\n  <div class=\"uk-container uk-container-large\">\n    <div class=\"uk-column-1-2@m uk-column-1-3@l uk-column-1-4@xl\">\n      <sr-story ng-repeat=\"story in $ctrl.stories\" story=\"story\"></sr-story>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"uk-position-fixed uk-position-top\">\n  <sr-nav></sr-nav>\n</div>\n";
+module.exports = "<div style=\"margin-top: 100px\">\n  <div class=\"uk-container uk-container-large\">\n    <div class=\"uk-column-1-2@m uk-column-1-3@l uk-column-1-4@xl\">\n      <div ng-repeat=\"story in $ctrl.stories\" style=\"display: inline-block\">\n        <sr-story style=\"display:inline-block;\" story=\"story\"></sr-story>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"uk-position-fixed uk-position-top\">\n  <sr-nav></sr-nav>\n</div>\n";
 
 /***/ }),
 /* 322 */
 /***/ (function(module, exports) {
 
-module.exports = "<a ng-click=\"$ctrl.zoom()\" href=\"#story{{$ctrl.story.id}}\" uk-toggle>\n  <sr-card\n    image=\"{{$ctrl.story.image}}\"\n    title=\"{{$ctrl.story.title}}\"\n    body=\"{{$ctrl.story.short}}\"\n    meta=\"— {{$ctrl.story.name}}\">\n  </sr-card>\n</a>\n\n<div id=\"story{{$ctrl.story.id}}\" ng-class=\"{'uk-modal-full': $ctrl.story.image}\" uk-modal>\n  <div ng-if=\"$ctrl.zoomed && $ctrl.story.image\" class=\"uk-modal-dialog\">\n    <button class=\"uk-modal-close-full uk-close-large\" type=\"button\" uk-close></button>\n    <div class=\"uk-grid-collapse uk-child-width-1-2@s uk-flex-middle\" uk-grid>\n      <div class=\"uk-background-cover\" style=\"background-image: url('{{$ctrl.story.image}}');\" uk-height-viewport></div>\n      <div class=\"uk-padding-large\">\n        <h1>{{$ctrl.story.title}}</h1>\n        <p>{{$ctrl.story.story}}</p>\n        <span class=\"uk-text-meta\">— {{$ctrl.story.name}}</span>\n        <p>\n          <sr-facebook-share link=\"{{$ctrl.componentURL}}\"></sr-facebook-share>\n          <sr-twitter-share link=\"{{$ctrl.componentURL}}\"></sr-twitter-share>\n        </p>\n      </div>\n    </div>\n  </div>\n\n  <div ng-if=\"$ctrl.zoomed && !$ctrl.story.image\" class=\"uk-modal-dialog uk-modal-body\">\n    <button class=\"uk-modal-close-default\" type=\"button\" uk-close></button>\n    <h2 class=\"uk-modal-title\">{{$ctrl.story.title}}</h2>\n    <p>{{$ctrl.story.story}}</p>\n    <span class=\"uk-text-meta\">— {{$ctrl.story.name}}</span>\n    <p>\n      <sr-facebook-share link=\"{{$ctrl.componentURL}}\"></sr-facebook-share>\n      <a href=\"https://twitter.com/share\" class=\"twitter-share-button\" data-url=\"{{$ctrl.componentURL}}\" data-show-count=\"false\">Tweet</a><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n    </p>\n  </div>\n</div>\n";
+module.exports = "<sr-card ng-click=\"$ctrl.zoom()\" href=\"#story{{$ctrl.story.id}}\" style=\"cursor: pointer\" uk-toggle\n  image=\"{{$ctrl.story.image}}\"\n  title=\"{{$ctrl.story.title}}\"\n  body=\"{{$ctrl.story.short}}\"\n  meta=\"— {{$ctrl.story.name}}\">\n</sr-card>\n\n<div id=\"story{{$ctrl.story.id}}\" ng-class=\"{'uk-modal-full': $ctrl.story.image}\" uk-modal>\n  <div ng-if=\"$ctrl.zoomed && $ctrl.story.image\" class=\"uk-modal-dialog\">\n    <button class=\"uk-modal-close-full uk-close-large\" type=\"button\" uk-close></button>\n    <div class=\"uk-grid-collapse uk-child-width-1-2@s uk-flex-middle\" uk-grid>\n      <div class=\"uk-background-cover\" style=\"background-image: url('{{$ctrl.story.image}}');\" uk-height-viewport></div>\n      <div class=\"uk-padding-large\">\n        <h1>{{$ctrl.story.title}}</h1>\n        <p>{{$ctrl.story.story}}</p>\n        <span class=\"uk-text-meta\">— {{$ctrl.story.name}}</span>\n        <p>\n          <sr-facebook-share link=\"{{$ctrl.componentURL}}\"></sr-facebook-share>\n          <sr-twitter-share link=\"{{$ctrl.componentURL}}\"></sr-twitter-share>\n        </p>\n      </div>\n    </div>\n  </div>\n\n  <div ng-if=\"$ctrl.zoomed && !$ctrl.story.image\" class=\"uk-modal-dialog uk-modal-body\">\n    <button class=\"uk-modal-close-default\" type=\"button\" uk-close></button>\n    <h2 class=\"uk-modal-title\">{{$ctrl.story.title}}</h2>\n    <p>{{$ctrl.story.story}}</p>\n    <span class=\"uk-text-meta\">— {{$ctrl.story.name}}</span>\n    <p>\n      <sr-facebook-share link=\"{{$ctrl.componentURL}}\"></sr-facebook-share>\n      <a href=\"https://twitter.com/share\" class=\"twitter-share-button\" data-url=\"{{$ctrl.componentURL}}\" data-show-count=\"false\">Tweet</a><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n    </p>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 323 */
