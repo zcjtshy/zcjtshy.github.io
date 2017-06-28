@@ -9281,6 +9281,9 @@ var MARGIN = 30;
 exports.default = [function () {
   function link(scope, element, attrs) {
     $(element).css('position', 'relative');
+    window.addEventListener('resize', function () {
+      return manipulateDOM(element);
+    });
     scope.$watch('data', function (c) {
       setTimeout(function () {
         manipulateDOM(element);
@@ -9300,7 +9303,8 @@ exports.default = [function () {
   }
 
   function resetCells($cells) {
-    $cells.css('position', 'absolute').css('top', '0').css('left', '0');
+    console.log('hi');
+    $cells.css('position', 'absolute').css('top', '0').css('left', '0').css('width', '').css('height', '');
   }
 
   function getColumnCount($container, $cells) {

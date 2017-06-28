@@ -3,6 +3,7 @@ const MARGIN = 30;
 export default [function(){
   function link(scope, element, attrs) {
     $(element).css('position', 'relative');
+    window.addEventListener('resize', () => manipulateDOM(element));
     scope.$watch('data', function(c){
       setTimeout(function(){
         manipulateDOM(element);
@@ -22,9 +23,12 @@ export default [function(){
   }
   
   function resetCells($cells){
+    console.log('hi');
     $cells.css('position', 'absolute')
       .css('top', '0')
-      .css('left', '0');
+      .css('left', '0')
+      .css('width', '')
+      .css('height', '');
   }
 
   function getColumnCount($container, $cells){
