@@ -35,7 +35,7 @@ const components = {
 Object.keys(components).forEach((name) => app.component(name, components[name]));
 
 const directives = {
-  'isotope': requireDirective('isotope.directive'),
+  'collapsedGrid': requireDirective('collapsed-grid.directive'),
 }
 
 Object.keys(directives).forEach((name) => app.directive(name, directives[name]));

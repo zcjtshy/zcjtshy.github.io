@@ -3380,7 +3380,7 @@ Object.keys(components).forEach(function (name) {
 });
 
 var directives = {
-  'isotope': (0, _webpackRequire.requireDirective)('isotope.directive')
+  'collapsedGrid': (0, _webpackRequire.requireDirective)('collapsed-grid.directive')
 };
 
 Object.keys(directives).forEach(function (name) {
@@ -8407,7 +8407,7 @@ module.exports = "<a\n  href=\"https://twitter.com/share\"\n  class=\"twitter-sh
 /* 349 */
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"margin-top: 100px\">\n  <div class=\"uk-container uk-container-large\">\n    <div class=\"uk-column-1-2@m uk-column-1-3@l uk-column-1-4@xl\">\n      <sr-story ng-repeat=\"story in $ctrl.stories\" style=\"display:inline-block;\" story=\"story\" uk-scrollspy=\"cls: uk-animation-fade; delay: 500; repeat: true;\"></sr-story>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"uk-position-fixed uk-position-top\">\n  <sr-nav></sr-nav>\n</div>\n";
+module.exports = "<div style=\"margin-top: 100px\">\n  <div class=\"uk-container uk-container-large\">\n    <!--\n    <div class=\"uk-column-1-2@m uk-column-1-3@l uk-column-1-4@xl\">\n      <sr-story ng-repeat=\"story in $ctrl.stories\" style=\"display:inline-block;\" story=\"story\" uk-scrollspy=\"cls: uk-animation-fade; delay: 500; repeat: true; target: .uk-card\"></sr-story>\n    </div>\n    -->\n    <div collapsed-grid=\"$ctrl.stories\">\n      <sr-story class=\"uk-width-1-2@m uk-width-1-3@l uk-width-1-4@xl\" ng-repeat=\"story in $ctrl.stories\" style=\"display:block;\" story=\"story\" uk-scrollspy=\"cls: uk-animation-fade; delay: 500; repeat: true; target: .uk-card\"></sr-story>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"uk-position-fixed uk-position-top\">\n  <sr-nav></sr-nav>\n</div>\n";
 
 /***/ }),
 /* 350 */
@@ -9233,8 +9233,8 @@ webpackContext.id = 353;
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./isotope.directive": 357,
-	"./isotope.directive.js": 357
+	"./collapsed-grid.directive": 370,
+	"./collapsed-grid.directive.js": 370
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -9254,7 +9254,20 @@ webpackContext.id = 355;
 
 /***/ }),
 /* 356 */,
-/* 357 */
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9263,31 +9276,74 @@ webpackContext.id = 355;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var FitColumns = Isotope.LayoutMode.modes.fitColumns;
-FitColumns.prototype._getContainerSize = function () {};
-
-FitColumns.prototype.needsResizeLayout = function () {
-  // don't trigger if size did not change
-  var size = getSize(this.isotope.element);
-  if (this.isotope.size && size) {
-    return size.innerHeight !== this.isotope.size.innerHeight || size.innerWidth !== this.isotope.size.innerWidth;
-  } else {
-    return false;
-  }
-};
+var MARGIN = 30;
 
 exports.default = [function () {
   function link(scope, element, attrs) {
+    $(element).css('position', 'relative');
     scope.$watch('data', function (c) {
-      if (c.length === 0) return;
-      manipulateDOM(element);
+      setTimeout(function () {
+        manipulateDOM(element);
+      }, 0);
     });
   }
 
   function manipulateDOM(element) {
-    $(element).isotope({
-      itemSelector: 'sr-story',
-      layoutMode: 'fitColumns'
+    var $container = $(element);
+    var $cells = $(element).children();
+    resetCells($cells);
+    // subtract cell width by the margin
+    $cells.outerWidth($cells.outerWidth(true) - MARGIN);
+
+    putCellsIntoRows($cells, getColumnCount($container, $cells));
+    putCellsIntoCols($cells, getColumnCount($container, $cells));
+  }
+
+  function resetCells($cells) {
+    $cells.css('position', 'absolute').css('top', '0').css('left', '0');
+  }
+
+  function getColumnCount($container, $cells) {
+    var cellWidth = $cells.first().outerWidth(true);
+    var containerWidth = $container.outerWidth(true);
+    return Math.floor(containerWidth / cellWidth);
+  }
+
+  function putCellsIntoRows($cells, columnCount) {
+    var cellWidth = $cells.first().outerWidth(true);
+    $cells.each(function (i) {
+      var col = i % columnCount;
+      $(this).css('left', (cellWidth + MARGIN) * col + 'px');
+    });
+  }
+
+  function putCellsIntoCols($cells, columnCount) {
+    var columns = [];
+    for (var i = 0; i < columnCount; i++) {
+      columns.push(getCellsInCol(i, $cells, columnCount));
+    }
+
+    columns.forEach(putCellsIntoCol);
+  }
+
+  function putCellsIntoCol($cells) {
+    var columnHeights = $cells.map(function () {
+      return $(this).outerHeight(true);
+    }).toArray();
+
+    // this accumulates the heights to obtain the tops
+    var columnTops = columnHeights.reduce(function (arr, x, i) {
+      return arr.concat([arr[i] + x]);
+    }, [0]);
+
+    $cells.css('top', function (i) {
+      return columnTops[i] + 'px';
+    });
+  }
+
+  function getCellsInCol(x, $cells, columnCount) {
+    return $cells.filter(function (i) {
+      return i % columnCount === x;
     });
   }
 
@@ -9300,7 +9356,7 @@ exports.default = [function () {
   return {
     restrict: 'A',
     scope: {
-      data: '=isotope'
+      data: '=collapsedGrid'
     },
     link: link
   };
