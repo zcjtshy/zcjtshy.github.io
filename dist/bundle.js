@@ -8105,7 +8105,7 @@ module.exports = "<div id=\"home\" class=\"uk-cover-container\" uk-height-viewpo
 /* 315 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"uk-dark\">\n  <ul class=\"uk-dotnav uk-dotnav-vertical\" uk-scrollspy-nav=\"cls: uk-active; closest: li; scroll: true;\">\n    <li><a href=\"#home\">Home</a></li>\n    <li><a href=\"#about\">About</a></li>\n    <li><a href=\"#support\">Support and Information</a></li>\n    <li><a href=\"#contactus\">Contact Us</a></li>\n  </ul>\n</div>\n";
+module.exports = "<div style=\"background: rgba(255, 255, 255, 0.9); padding: 1em;\">\n  <ul class=\"uk-dotnav uk-dotnav-vertical\" uk-scrollspy-nav=\"cls: uk-active; closest: li; scroll: true;\">\n    <li><a href=\"#home\">Home</a></li>\n    <li><a href=\"#about\">About</a></li>\n    <li><a href=\"#support\">Support and Information</a></li>\n    <li><a href=\"#contactus\">Contact Us</a></li>\n  </ul>\n</div>\n";
 
 /***/ }),
 /* 316 */
