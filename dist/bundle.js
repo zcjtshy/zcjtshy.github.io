@@ -3719,9 +3719,7 @@ var storiesComponentController = ['storiesService', function (storiesService) {
   var $ctrl = this;
   $ctrl.stories = [];
   storiesService.getStories().then(function (stories) {
-    $ctrl.stories = stories.filter(function (s) {
-      return s.image;
-    });
+    $ctrl.stories = stories;
   });
 }];
 
