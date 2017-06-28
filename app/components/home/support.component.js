@@ -1,4 +1,5 @@
 import supportTemplate from './support.component.html';
+import backgroundImg from '../../../images/infosupport.jpg';
 
 var supports = [
   {
@@ -41,6 +42,7 @@ var supports = [
 var supportComponentController = [function(){
   var $ctrl = this;
   $ctrl.supports = supports;
+  $ctrl.backgroundImg = backgroundImg;
 }];
 
 export var supportComponent = {
