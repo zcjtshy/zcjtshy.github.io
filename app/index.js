@@ -3,6 +3,11 @@ import { routerConfig } from './configs/router.config';
 
 import { storiesService } from './services/stories.service';
 
+import { cardComponent } from './components/card/card.component';
+
+import { facebookShareComponent } from './components/share-buttons/facebook-share.component';
+import { twitterShareComponent } from './components/share-buttons/twitter-share.component';
+
 import { homeComponent } from './components/home/home.component';
 import { dotnavComponent } from './components/home/dotnav.component';
 import { coverComponent } from './components/home/cover.component';
@@ -20,14 +25,17 @@ var app = angular.module('soulRelics', ['ui.router'])
   .service('storiesService', storiesService);
 
 var components = {
-  'srNav'     : navComponent,
-  'srHome'    : homeComponent,
-  'srCover'   : coverComponent,
-  'srDotnav'  : dotnavComponent,
-  'srAbout'   : aboutComponent,
-  'srSupport' : supportComponent,
-  'srStories' : storiesComponent,
-  'srStory'   : storyComponent,
+  'srNav'           : navComponent,
+  'srHome'          : homeComponent,
+  'srCover'         : coverComponent,
+  'srDotnav'        : dotnavComponent,
+  'srAbout'         : aboutComponent,
+  'srSupport'       : supportComponent,
+  'srStories'       : storiesComponent,
+  'srStory'         : storyComponent,
+  'srCard'          : cardComponent,
+  'srFacebookShare' : facebookShareComponent,
+  'srTwitterShare'  : twitterShareComponent,
 }
 
 // register all components

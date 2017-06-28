@@ -1,14 +1,10 @@
 <a ng-click="$ctrl.zoom()" href="#story{{$ctrl.story.id}}" uk-toggle>
-  <div class="uk-card uk-card-default uk-card-hover uk-margin-medium-bottom" style="display: inline-block">
-    <div class="uk-card-media-top" ng-if="$ctrl.story.image">
-      <img ng-src="{{$ctrl.story.image}}">
-    </div>
-    <div class="uk-card-body">
-      <h3 ng-if="$ctrl.story.title" class="uk-card-title">{{ $ctrl.story.title }}</h3>
-      <p>{{ $ctrl.story.short }}</p>
-      <span ng-if="$ctrl.story.name" class="uk-text-meta">— {{ $ctrl.story.name }}</span>
-    </div>
-  </div>
+  <sr-card
+    image="{{$ctrl.story.image}}"
+    title="{{$ctrl.story.title}}"
+    body="{{$ctrl.story.short}}"
+    meta="— {{$ctrl.story.name}}">
+  </sr-card>
 </a>
 
 <div id="story{{$ctrl.story.id}}" ng-class="{'uk-modal-full': $ctrl.story.image}" uk-modal>
@@ -21,8 +17,8 @@
         <p>{{$ctrl.story.story}}</p>
         <span class="uk-text-meta">— {{$ctrl.story.name}}</span>
         <p>
-          <iframe ng-src="{{$ctrl.facebook_share_iframe_url}}" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-          <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{$ctrl.componentURL}}" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <sr-facebook-share link="{{$ctrl.componentURL}}"></sr-facebook-share>
+          <sr-twitter-share link="{{$ctrl.componentURL}}"></sr-twitter-share>
         </p>
       </div>
     </div>
@@ -34,7 +30,7 @@
     <p>{{$ctrl.story.story}}</p>
     <span class="uk-text-meta">— {{$ctrl.story.name}}</span>
     <p>
-      <iframe src="{{$ctrl.facebook_share_iframe_url}}" width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      <sr-facebook-share link="{{$ctrl.componentURL}}"></sr-facebook-share>
       <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{$ctrl.componentURL}}" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </p>
   </div>
