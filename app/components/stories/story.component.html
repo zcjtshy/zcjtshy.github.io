@@ -1,8 +1,7 @@
 <sr-card
   ng-click="$ctrl.zoom()"
-  href="#story{{$ctrl.story.id}}"
   style="cursor: pointer"
-  uk-toggle
+  uk-toggle="target: #story{{$ctrl.story.id}}"
   hover="true"
   image="{{$ctrl.story.image}}"
   title="{{$ctrl.story.title}}"
@@ -11,7 +10,7 @@
 </sr-card>
 
 <div id="story{{$ctrl.story.id}}" ng-class="{'uk-modal-full': $ctrl.story.image}" uk-modal>
-  <div ng-if="$ctrl.zoomed && $ctrl.story.image" class="uk-modal-dialog">
+  <div ng-if="$ctrl.story.image" class="uk-modal-dialog">
     <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
     <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
       <div class="uk-background-cover" style="background-image: url('{{$ctrl.story.image}}');" uk-height-viewport></div>
@@ -27,7 +26,7 @@
     </div>
   </div>
 
-  <div ng-if="$ctrl.zoomed && !$ctrl.story.image" class="uk-modal-dialog uk-modal-body">
+  <div ng-if="!$ctrl.story.image" class="uk-modal-dialog uk-modal-body">
     <button class="uk-modal-close-default" type="button" uk-close></button>
     <h2 class="uk-modal-title">{{$ctrl.story.title}}</h2>
     <p>{{$ctrl.story.story}}</p>
