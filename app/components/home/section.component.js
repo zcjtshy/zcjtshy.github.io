@@ -8,7 +8,6 @@ export var sectionComponent = {
   bindings: {
     innerid: "@",
     backgroundImg: "@",
-    backgroundColor: "@",
   },
   transclude: true,
   template: sectionTemplate,
