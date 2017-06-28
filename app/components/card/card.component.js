@@ -1,6 +1,6 @@
 import cardTemplate from './card.component.html';
 
-export var cardComponent = {
+export default {
   bindings: {
     image: '@',
     title: '@',

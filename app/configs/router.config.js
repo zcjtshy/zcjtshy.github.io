@@ -1,4 +1,4 @@
-export var routerConfig = ['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+export default ['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
   var homeState = {
     name: 'home',
     url: '/home',

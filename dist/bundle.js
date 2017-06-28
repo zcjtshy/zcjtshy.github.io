@@ -1376,6 +1376,12 @@ Object.defineProperty(exports, "__esModule", {
 var requireImage = exports.requireImage = function requireImage(f) {
   return '/dist/' + __webpack_require__(117)('./' + f);
 };
+var requireComponent = exports.requireComponent = function requireComponent(f) {
+  return __webpack_require__(353)('./' + f).default;
+};
+var requireDirective = exports.requireDirective = function requireDirective(f) {
+  return __webpack_require__(355)('./' + f).default;
+};
 
 /***/ }),
 /* 46 */
@@ -3332,56 +3338,53 @@ module.exports = g;
 
 var _html5Mode = __webpack_require__(131);
 
+var _html5Mode2 = _interopRequireDefault(_html5Mode);
+
 var _router = __webpack_require__(132);
+
+var _router2 = _interopRequireDefault(_router);
 
 var _stories = __webpack_require__(134);
 
-var _card = __webpack_require__(118);
+var _stories2 = _interopRequireDefault(_stories);
 
-var _facebookShare = __webpack_require__(127);
+var _webpackRequire = __webpack_require__(45);
 
-var _twitterShare = __webpack_require__(128);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _home = __webpack_require__(123);
-
-var _section = __webpack_require__(124);
-
-var _dotnav = __webpack_require__(122);
-
-var _cover = __webpack_require__(121);
-
-var _about = __webpack_require__(119);
-
-var _support = __webpack_require__(125);
-
-var _contactus = __webpack_require__(120);
-
-var _stories2 = __webpack_require__(129);
-
-var _story = __webpack_require__(130);
-
-var _nav = __webpack_require__(126);
-
-var app = angular.module('soulRelics', ['ui.router']).config(_html5Mode.html5ModeConfig).config(_router.routerConfig).service('storiesService', _stories.storiesService);
+var app = angular.module('soulRelics', ['ui.router']).config(_html5Mode2.default).config(_router2.default).service('storiesService', _stories2.default);
 
 var components = {
-  'srNav': _nav.navComponent,
-  'srHome': _home.homeComponent,
-  'srSection': _section.sectionComponent,
-  'srCover': _cover.coverComponent,
-  'srDotnav': _dotnav.dotnavComponent,
-  'srAbout': _about.aboutComponent,
-  'srSupport': _support.supportComponent,
-  'srContactus': _contactus.contactusComponent,
-  'srStories': _stories2.storiesComponent,
-  'srStory': _story.storyComponent,
-  'srCard': _card.cardComponent,
-  'srFacebookShare': _facebookShare.facebookShareComponent,
-  'srTwitterShare': _twitterShare.twitterShareComponent
+  'srNav': (0, _webpackRequire.requireComponent)('nav/nav.component'),
 
-  // register all components
-};Object.keys(components).forEach(function (name) {
+  'srCard': (0, _webpackRequire.requireComponent)('card/card.component'),
+
+  'srFacebookShare': (0, _webpackRequire.requireComponent)('share-buttons/facebook-share.component'),
+  'srTwitterShare': (0, _webpackRequire.requireComponent)('share-buttons/twitter-share.component'),
+
+  'srHome': (0, _webpackRequire.requireComponent)('home/home.component'),
+  'srSection': (0, _webpackRequire.requireComponent)('home/section.component'),
+  'srDotnav': (0, _webpackRequire.requireComponent)('home/dotnav.component'),
+  'srCover': (0, _webpackRequire.requireComponent)('home/cover.component'),
+  'srAbout': (0, _webpackRequire.requireComponent)('home/about.component'),
+  'srSupport': (0, _webpackRequire.requireComponent)('home/support.component'),
+  'srContactus': (0, _webpackRequire.requireComponent)('home/contactus.component'),
+
+  'srStories': (0, _webpackRequire.requireComponent)('stories/stories.component'),
+  'srStory': (0, _webpackRequire.requireComponent)('stories/story.component')
+};
+
+// register all components
+Object.keys(components).forEach(function (name) {
   return app.component(name, components[name]);
+});
+
+var directives = {
+  'isotope': (0, _webpackRequire.requireDirective)('isotope.directive')
+};
+
+Object.keys(directives).forEach(function (name) {
+  return app.directive(name, directives[name]);
 });
 
 /***/ }),
@@ -3473,7 +3476,6 @@ webpackContext.id = 117;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.cardComponent = undefined;
 
 var _cardComponent = __webpack_require__(338);
 
@@ -3481,7 +3483,7 @@ var _cardComponent2 = _interopRequireDefault(_cardComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var cardComponent = exports.cardComponent = {
+exports.default = {
   bindings: {
     image: '@',
     title: '@',
@@ -3503,7 +3505,6 @@ var cardComponent = exports.cardComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.aboutComponent = undefined;
 
 var _aboutComponent = __webpack_require__(339);
 
@@ -3513,7 +3514,7 @@ var _webpackRequire = __webpack_require__(45);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var aboutComponent = exports.aboutComponent = {
+exports.default = {
   template: _aboutComponent2.default,
   controller: function controller() {
     this.backgroundImg = (0, _webpackRequire.requireImage)('aboutus.jpg');
@@ -3530,7 +3531,6 @@ var aboutComponent = exports.aboutComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.contactusComponent = undefined;
 
 var _contactusComponent = __webpack_require__(340);
 
@@ -3540,7 +3540,7 @@ var _webpackRequire = __webpack_require__(45);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var contactusComponent = exports.contactusComponent = {
+exports.default = {
   template: _contactusComponent2.default,
   controller: function controller() {
     this.backgroundImg = (0, _webpackRequire.requireImage)('contactus.jpg');
@@ -3557,7 +3557,6 @@ var contactusComponent = exports.contactusComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.coverComponent = undefined;
 
 var _coverComponent = __webpack_require__(341);
 
@@ -3579,7 +3578,7 @@ var coverComponentController = ['$interval', function ($interval) {
   }, 3500);
 }];
 
-var coverComponent = exports.coverComponent = {
+exports.default = {
   template: _coverComponent2.default,
   controller: coverComponentController
 };
@@ -3594,7 +3593,6 @@ var coverComponent = exports.coverComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.dotnavComponent = undefined;
 
 var _dotnavComponent = __webpack_require__(342);
 
@@ -3604,7 +3602,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var dotnavComponentController = ['$anchorScroll', function ($anchorScroll) {}];
 
-var dotnavComponent = exports.dotnavComponent = {
+exports.default = {
   template: _dotnavComponent2.default,
   controller: dotnavComponentController
 };
@@ -3619,7 +3617,6 @@ var dotnavComponent = exports.dotnavComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.homeComponent = undefined;
 
 var _homeComponent = __webpack_require__(343);
 
@@ -3629,7 +3626,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var homeComponentController = function homeComponentController() {};
 
-var homeComponent = exports.homeComponent = {
+exports.default = {
   template: _homeComponent2.default,
   controller: homeComponentController
 };
@@ -3644,7 +3641,6 @@ var homeComponent = exports.homeComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.sectionComponent = undefined;
 
 var _sectionComponent = __webpack_require__(344);
 
@@ -3654,7 +3650,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var sectionComponentController = function sectionComponentController() {};
 
-var sectionComponent = exports.sectionComponent = {
+exports.default = {
   bindings: {
     innerid: "@",
     backgroundImg: "@"
@@ -3674,7 +3670,6 @@ var sectionComponent = exports.sectionComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.supportComponent = undefined;
 
 var _supportComponent = __webpack_require__(345);
 
@@ -3721,7 +3716,7 @@ var supportComponentController = [function () {
   $ctrl.backgroundImg = (0, _webpackRequire.requireImage)('infosupport.jpg');
 }];
 
-var supportComponent = exports.supportComponent = {
+exports.default = {
   template: _supportComponent2.default,
   controller: supportComponentController
 };
@@ -3736,7 +3731,6 @@ var supportComponent = exports.supportComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.navComponent = undefined;
 
 var _navComponent = __webpack_require__(346);
 
@@ -3751,7 +3745,7 @@ function navController() {
   };
 }
 
-var navComponent = exports.navComponent = {
+exports.default = {
   template: _navComponent2.default,
   controller: navController
 };
@@ -3766,7 +3760,6 @@ var navComponent = exports.navComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.facebookShareComponent = undefined;
 
 var _facebookShareComponent = __webpack_require__(347);
 
@@ -3782,7 +3775,7 @@ var facebookShareComponentController = ['$sce', function ($sce) {
   };
 }];
 
-var facebookShareComponent = exports.facebookShareComponent = {
+exports.default = {
   bindings: {
     link: '@'
   },
@@ -3800,7 +3793,6 @@ var facebookShareComponent = exports.facebookShareComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.twitterShareComponent = undefined;
 
 var _twitterShareComponent = __webpack_require__(348);
 
@@ -3808,7 +3800,7 @@ var _twitterShareComponent2 = _interopRequireDefault(_twitterShareComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var twitterShareComponent = exports.twitterShareComponent = {
+exports.default = {
   bindings: {
     link: '@'
   },
@@ -3826,7 +3818,6 @@ var twitterShareComponent = exports.twitterShareComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.storiesComponent = undefined;
 
 var _storiesComponent = __webpack_require__(349);
 
@@ -3842,7 +3833,7 @@ var storiesComponentController = ['storiesService', function (storiesService) {
   });
 }];
 
-var storiesComponent = exports.storiesComponent = {
+exports.default = {
   template: _storiesComponent2.default,
   controller: storiesComponentController
 };
@@ -3857,7 +3848,6 @@ var storiesComponent = exports.storiesComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.storyComponent = undefined;
 
 var _storyComponent = __webpack_require__(350);
 
@@ -3894,7 +3884,7 @@ var storyComponentController = ['$location', function ($location) {
   }, 0);
 }];
 
-var storyComponent = exports.storyComponent = {
+exports.default = {
   bindings: {
     story: '='
   },
@@ -3912,7 +3902,7 @@ var storyComponent = exports.storyComponent = {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var html5ModeConfig = exports.html5ModeConfig = ['$locationProvider', function ($locationProvider) {
+exports.default = ['$locationProvider', function ($locationProvider) {
   $locationProvider.html5Mode(true);
 }];
 
@@ -3926,7 +3916,7 @@ var html5ModeConfig = exports.html5ModeConfig = ['$locationProvider', function (
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var routerConfig = exports.routerConfig = ['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+exports.default = ['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
   var homeState = {
     name: 'home',
     url: '/home',
@@ -3957,11 +3947,10 @@ var routerConfig = exports.routerConfig = ['$stateProvider', '$urlRouterProvider
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.stories = undefined;
 
 var _webpackRequire = __webpack_require__(45);
 
-var stories = exports.stories = [{
+var stories = [{
   id: 0,
   title: 'A Remote Control',
   name: '',
@@ -4094,6 +4083,8 @@ stories.forEach(function (s) {
   if (s.image) s.image = (0, _webpackRequire.requireImage)(s.image);
 });
 
+exports.default = stories;
+
 /***/ }),
 /* 134 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -4104,14 +4095,17 @@ stories.forEach(function (s) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.storiesService = undefined;
 
 var _stories = __webpack_require__(133);
 
-var storiesService = exports.storiesService = [function () {
+var _stories2 = _interopRequireDefault(_stories);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = [function () {
   // Promise is used so that later one could easily change this service to call asynchronously to a server to fetch stories
   this.getStories = function () {
-    return Promise.resolve(JSON.parse(JSON.stringify(_stories.stories)));
+    return Promise.resolve(JSON.parse(JSON.stringify(_stories2.default)));
   };
 }];
 
@@ -8413,7 +8407,7 @@ module.exports = "<a\n  href=\"https://twitter.com/share\"\n  class=\"twitter-sh
 /* 349 */
 /***/ (function(module, exports) {
 
-module.exports = "<div style=\"margin-top: 100px\">\n  <div class=\"uk-container uk-container-large\">\n    <div class=\"uk-column-1-2@m uk-column-1-3@l uk-column-1-4@xl\">\n      <div ng-repeat=\"story in $ctrl.stories\" style=\"display: inline-block\">\n        <sr-story style=\"display:inline-block;\" story=\"story\"></sr-story>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"uk-position-fixed uk-position-top\">\n  <sr-nav></sr-nav>\n</div>\n";
+module.exports = "<div style=\"margin-top: 100px\">\n  <div class=\"uk-container uk-container-large\">\n    <div class=\"uk-column-1-2@m uk-column-1-3@l uk-column-1-4@xl\">\n      <sr-story ng-repeat=\"story in $ctrl.stories\" style=\"display:inline-block;\" story=\"story\" uk-scrollspy=\"cls: uk-animation-fade; delay: 500; repeat: true;\"></sr-story>\n    </div>\n  </div>\n</div>\n\n\n<div class=\"uk-position-fixed uk-position-top\">\n  <sr-nav></sr-nav>\n</div>\n";
 
 /***/ }),
 /* 350 */
@@ -9171,6 +9165,146 @@ module.exports = "<sr-card\n  ng-click=\"$ctrl.zoom()\"\n  href=\"#story{{$ctrl.
 __webpack_require__(116);
 module.exports = __webpack_require__(115);
 
+
+/***/ }),
+/* 353 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./card/card.component": 118,
+	"./card/card.component.html": 338,
+	"./card/card.component.js": 118,
+	"./home/about.component": 119,
+	"./home/about.component.html": 339,
+	"./home/about.component.js": 119,
+	"./home/contactus.component": 120,
+	"./home/contactus.component.html": 340,
+	"./home/contactus.component.js": 120,
+	"./home/cover.component": 121,
+	"./home/cover.component.html": 341,
+	"./home/cover.component.js": 121,
+	"./home/dotnav.component": 122,
+	"./home/dotnav.component.html": 342,
+	"./home/dotnav.component.js": 122,
+	"./home/home.component": 123,
+	"./home/home.component.html": 343,
+	"./home/home.component.js": 123,
+	"./home/section.component": 124,
+	"./home/section.component.html": 344,
+	"./home/section.component.js": 124,
+	"./home/support.component": 125,
+	"./home/support.component.html": 345,
+	"./home/support.component.js": 125,
+	"./nav/nav.component": 126,
+	"./nav/nav.component.html": 346,
+	"./nav/nav.component.js": 126,
+	"./share-buttons/facebook-share.component": 127,
+	"./share-buttons/facebook-share.component.html": 347,
+	"./share-buttons/facebook-share.component.js": 127,
+	"./share-buttons/twitter-share.component": 128,
+	"./share-buttons/twitter-share.component.html": 348,
+	"./share-buttons/twitter-share.component.js": 128,
+	"./stories/stories.component": 129,
+	"./stories/stories.component.html": 349,
+	"./stories/stories.component.js": 129,
+	"./stories/story.component": 130,
+	"./stories/story.component.html": 350,
+	"./stories/story.component.js": 130
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 353;
+
+/***/ }),
+/* 354 */,
+/* 355 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./isotope.directive": 357,
+	"./isotope.directive.js": 357
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 355;
+
+/***/ }),
+/* 356 */,
+/* 357 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var FitColumns = Isotope.LayoutMode.modes.fitColumns;
+FitColumns.prototype._getContainerSize = function () {};
+
+FitColumns.prototype.needsResizeLayout = function () {
+  // don't trigger if size did not change
+  var size = getSize(this.isotope.element);
+  if (this.isotope.size && size) {
+    return size.innerHeight !== this.isotope.size.innerHeight || size.innerWidth !== this.isotope.size.innerWidth;
+  } else {
+    return false;
+  }
+};
+
+exports.default = [function () {
+  function link(scope, element, attrs) {
+    scope.$watch('data', function (c) {
+      if (c.length === 0) return;
+      manipulateDOM(element);
+    });
+  }
+
+  function manipulateDOM(element) {
+    $(element).isotope({
+      itemSelector: 'sr-story',
+      layoutMode: 'fitColumns'
+    });
+  }
+
+  function getCellsLeftOffsets($cells) {
+    return $.unique($cells.map(function () {
+      return $(this).offset().left;
+    })).toArray();
+  }
+
+  return {
+    restrict: 'A',
+    scope: {
+      data: '=isotope'
+    },
+    link: link
+  };
+}];
 
 /***/ })
 /******/ ]);

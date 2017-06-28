@@ -1,5 +1,5 @@
 import { requireImage } from '../webpack-require';
-export var stories = [
+var stories = [
   {
     id: 0,
     title: 'A Remote Control',
@@ -150,3 +150,5 @@ export var stories = [
 stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);
 });
+
+export default stories;

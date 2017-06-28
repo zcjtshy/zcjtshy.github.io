@@ -8,7 +8,7 @@ var storiesComponentController = ['storiesService', function(storiesService){
   });
 }];
 
-export var storiesComponent = {
+export default {
   template: storiesTemplate,
   controller: storiesComponentController
 };

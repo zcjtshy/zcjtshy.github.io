@@ -4,7 +4,7 @@ import dotnavTemplate from './dotnav.component.html';
 var dotnavComponentController = ['$anchorScroll', function($anchorScroll){
 }];
 
-export var dotnavComponent = {
+export default {
   template: dotnavTemplate,
   controller: dotnavComponentController
 };

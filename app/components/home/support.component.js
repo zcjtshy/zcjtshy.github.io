@@ -45,7 +45,7 @@ var supportComponentController = [function(){
   $ctrl.backgroundImg = requireImage('infosupport.jpg');
 }];
 
-export var supportComponent = {
+export default {
   template: supportTemplate,
   controller: supportComponentController
 };

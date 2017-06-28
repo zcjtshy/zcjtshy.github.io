@@ -9,7 +9,7 @@ var coverComponentController = ['$interval', function($interval){
   }, 3500);
 }];
 
-export var coverComponent = {
+export default {
   template: coverTemplate,
   controller: coverComponentController
 };

@@ -8,7 +8,7 @@ const facebookShareComponentController = ['$sce', function($sce){
   };
 }];
 
-export var facebookShareComponent = {
+export default {
   bindings: {
     link: '@',
   },

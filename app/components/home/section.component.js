@@ -4,7 +4,7 @@ import sectionTemplate from './section.component.html';
 var sectionComponentController = function(){
 };
 
-export var sectionComponent = {
+export default {
   bindings: {
     innerid: "@",
     backgroundImg: "@",

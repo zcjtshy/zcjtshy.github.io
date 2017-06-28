@@ -1,6 +1,6 @@
 import twitterShareTemplate from './twitter-share.component.html';
 
-export var twitterShareComponent = {
+export default {
   bindings: {
     link: '@',
   },

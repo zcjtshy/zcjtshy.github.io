@@ -4,7 +4,7 @@ import homeTemplate from './home.component.html';
 var homeComponentController = function(){
 };
 
-export var homeComponent = {
+export default {
   template: homeTemplate,
   controller: homeComponentController
 };

@@ -7,7 +7,7 @@ function navController(){
   };
 }
 
-export var navComponent = {
+export default {
   template: navTemplate,
   controller: navController
 };

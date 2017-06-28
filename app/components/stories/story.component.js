@@ -30,7 +30,7 @@ var storyComponentController = ['$location', function($location){
   }, 0);
 }];
 
-export var storyComponent = {
+export default {
   bindings: {
     story: '=',
   },
