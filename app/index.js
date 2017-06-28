@@ -9,10 +9,12 @@ import { facebookShareComponent } from './components/share-buttons/facebook-shar
 import { twitterShareComponent } from './components/share-buttons/twitter-share.component';
 
 import { homeComponent } from './components/home/home.component';
+import { sectionComponent } from './components/home/section.component';
 import { dotnavComponent } from './components/home/dotnav.component';
 import { coverComponent } from './components/home/cover.component';
 import { aboutComponent } from './components/home/about.component';
 import { supportComponent } from './components/home/support.component';
+import { contactusComponent } from './components/home/contactus.component';
 
 import { storiesComponent } from './components/stories/stories.component';
 import { storyComponent } from './components/stories/story.component';
@@ -27,10 +29,12 @@ var app = angular.module('soulRelics', ['ui.router'])
 var components = {
   'srNav'           : navComponent,
   'srHome'          : homeComponent,
+  'srSection'       : sectionComponent,
   'srCover'         : coverComponent,
   'srDotnav'        : dotnavComponent,
   'srAbout'         : aboutComponent,
   'srSupport'       : supportComponent,
+  'srContactus'     : contactusComponent,
   'srStories'       : storiesComponent,
   'srStory'         : storyComponent,
   'srCard'          : cardComponent,

@@ -3330,6 +3330,8 @@ var _twitterShare = __webpack_require__(124);
 
 var _home = __webpack_require__(120);
 
+var _section = __webpack_require__(327);
+
 var _dotnav = __webpack_require__(119);
 
 var _cover = __webpack_require__(118);
@@ -3337,6 +3339,8 @@ var _cover = __webpack_require__(118);
 var _about = __webpack_require__(117);
 
 var _support = __webpack_require__(121);
+
+var _contactus = __webpack_require__(325);
 
 var _stories2 = __webpack_require__(125);
 
@@ -3349,10 +3353,12 @@ var app = angular.module('soulRelics', ['ui.router']).config(_html5Mode.html5Mod
 var components = {
   'srNav': _nav.navComponent,
   'srHome': _home.homeComponent,
+  'srSection': _section.sectionComponent,
   'srCover': _cover.coverComponent,
   'srDotnav': _dotnav.dotnavComponent,
   'srAbout': _about.aboutComponent,
   'srSupport': _support.supportComponent,
+  'srContactus': _contactus.contactusComponent,
   'srStories': _stories2.storiesComponent,
   'srStory': _story.storyComponent,
   'srCard': _card.cardComponent,
@@ -3421,9 +3427,10 @@ var cardComponent = exports.cardComponent = {
   bindings: {
     image: '@',
     title: '@',
-    body: '@',
-    meta: '@'
+    meta: '@',
+    hover: '@'
   },
+  transclude: true,
   template: _cardComponent2.default,
   controller: function controller() {}
 };
@@ -3446,21 +3453,9 @@ var _aboutComponent2 = _interopRequireDefault(_aboutComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var aboutComponentController = ['$interval', function ($interval) {
-  var _this = this;
-
-  this.images = ['pebble.jpg', 'filippa.jpg', 'remotecontrol.png', 'plato.jpg', 'aboutblank.png'].map(function (f) {
-    return 'http://soulrelicsmuseum.me/' + f;
-  });
-  this.active = 0;
-  $interval(function () {
-    _this.active = (_this.active + 1) % _this.images.length;
-  }, 3500);
-}];
-
 var aboutComponent = exports.aboutComponent = {
   template: _aboutComponent2.default,
-  controller: aboutComponentController
+  controller: function controller() {}
 };
 
 /***/ }),
@@ -8092,13 +8087,13 @@ module.exports = __webpack_require__(24);
 /* 312 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"uk-card uk-card-default uk-card-hover uk-margin-medium-bottom\" style=\"display: inline-block\">\n  <div class=\"uk-card-media-top\" ng-if=\"$ctrl.image\">\n    <img style=\"transform: none\" ng-src=\"{{$ctrl.image}}\">\n  </div>\n  <div class=\"uk-card-body\">\n    <h3 ng-if=\"$ctrl.title\" class=\"uk-card-title\">{{ $ctrl.title }}</h3>\n    <p>{{ $ctrl.body }}</p>\n    <span ng-if=\"$ctrl.meta\" class=\"uk-text-meta\">{{ $ctrl.meta }}</span>\n  </div>\n</div>\n";
+module.exports = "<div ng-class=\"{\n  'uk-card-hover': $ctrl.hover\n}\" class=\"uk-card uk-card-default uk-margin-medium-bottom\">\n  <div class=\"uk-card-media-top\" ng-if=\"$ctrl.image\">\n    <img style=\"transform: none\" ng-src=\"{{$ctrl.image}}\">\n  </div>\n  <div class=\"uk-card-body\">\n    <h3 ng-if=\"$ctrl.title\" class=\"uk-card-title\">{{ $ctrl.title }}</h3>\n    <div ng-transclude></div>\n    <span ng-if=\"$ctrl.meta\" class=\"uk-text-meta\">{{ $ctrl.meta }}</span>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 313 */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"about\" class=\"uk-cover-container\" uk-height-viewport>\n  <img class=\"margin-large-top\" src=\"/images/aboutus.jpg\" uk-cover>\n  <div class=\"uk-overlay uk-position-cover uk-flex uk-flex-column uk-flex-left uk-dark\"\n    uk-scrollspy=\"cls:uk-animation-fade; offset-top: -80; repeat: true; delay: 100\"\n    style=\"background: rgba(255, 255, 255, 0.8)\">\n    <div style=\"margin-top: 80px\">\n      <div class=\"uk-flex\">\n        <h1 class=\"title\">About us</h1>\n      </div>\n    </div>\n    <div class=\"uk-overflow-auto\">\n      <div class=\"uk-flex\">\n        We believe everyone has a story to tell.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        Yet, many stories are untold, hidden, or suppressed.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        Soul Relics is an online platform on storytelling, objects and mental health. We are dedicated to respond to these issues using creative media and stories.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        We anchor our memories with objects. By creating an open platform for connections to form between our individual stories, and letting each person use objects to express a fragment of past/ present personal account of mental ill health and recovery, we hope to create a collective message that transcends barriers between people, and challenges the stigma surrounding mental health.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        Ultimately, we hope the platform will capture both unique experiences and common themes. We wish to provide a new way for people to tell and understand others’ stories.\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        If you agree with the cause, please read our stories, and/or send yours. You can also look at the vision statement on Medium .\n      </div>\n      <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n        It is a gallery of photos of objects and personal stories that are related to a difficult time of your lives (A period of mental ill health); and/or something that helped you work towards recovery. That object can be anything of personal significance, or/and represent institutional barrier to mental health care, etc.\n      </div>\n    </div>\n  </div>\n</div>\n";
+module.exports = "<sr-section innerid=\"about\" background-img=\"/images/aboutus.jpg\" background-color=\"rgba(255, 255, 255, 0.8)\">\n  <div class=\"uk-flex\">\n    <h1 class=\"title\">About us</h1>\n  </div>\n  <div class=\"uk-flex\">\n    We believe everyone has a story to tell.\n  </div>\n  <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n    Yet, many stories are untold, hidden, or suppressed.\n  </div>\n  <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n    Soul Relics is an online platform on storytelling, objects and mental health. We are dedicated to respond to these issues using creative media and stories.\n  </div>\n  <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n    We anchor our memories with objects. By creating an open platform for connections to form between our individual stories, and letting each person use objects to express a fragment of past/ present personal account of mental ill health and recovery, we hope to create a collective message that transcends barriers between people, and challenges the stigma surrounding mental health.\n  </div>\n  <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n    Ultimately, we hope the platform will capture both unique experiences and common themes. We wish to provide a new way for people to tell and understand others’ stories.\n  </div>\n  <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n    If you agree with the cause, please read our stories, and/or send yours. You can also look at the vision statement on Medium .\n  </div>\n  <div class=\"uk-flex uk-width-2-3@m uk-margin-top\">\n    It is a gallery of photos of objects and personal stories that are related to a difficult time of your lives (A period of mental ill health); and/or something that helped you work towards recovery. That object can be anything of personal significance, or/and represent institutional barrier to mental health care, etc.\n  </div>\n</sr-section>\n";
 
 /***/ }),
 /* 314 */
@@ -8116,13 +8111,13 @@ module.exports = "<div class=\"uk-dark\">\n  <ul class=\"uk-dotnav uk-dotnav-ver
 /* 316 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"uk-position-relative\">\n  <sr-cover></sr-cover>\n  <sr-about></sr-about>\n  <sr-support></sr-support>\n\n  <div class=\"uk-position-fixed uk-position-center-right uk-position-medium uk-visible@m\">\n    <sr-dotnav></sr-dotnav>\n  </div>\n\n  <div class=\"uk-position-fixed uk-position-top\">\n    <sr-nav></sr-nav>\n  </div>\n</div>\n";
+module.exports = "<div class=\"uk-position-relative\">\n  <sr-cover></sr-cover>\n  <sr-about></sr-about>\n  <sr-support></sr-support>\n  <sr-contactus></sr-contactus>\n\n  <div class=\"uk-position-fixed uk-position-center-right uk-position-medium uk-visible@m\">\n    <sr-dotnav></sr-dotnav>\n  </div>\n\n  <div class=\"uk-position-fixed uk-position-top\">\n    <sr-nav></sr-nav>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 317 */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"support\" class=\"uk-cover-container\" uk-height-viewport>\n  <img class=\"margin-large-top\" src=\"/images/infosupport.jpg\" uk-cover>\n  <div class=\"uk-overlay uk-position-cover uk-dark uk-flex uk-flex-column \"\n    uk-scrollspy=\"cls:uk-animation-fade; offset-top: -80; repeat: true; delay: 100\"\n    style=\"background: rgba(191, 255, 242, 0.8)\">\n    <div style=\"margin-top: 80px\">\n      <h1 class=\"title\">Support and Information</h1>\n      Places to find mental health support online\n    </div>\n    <div class=\"uk-overflow-auto\">\n\n      <div class=\"uk-child-width-1-3@m uk-grid-small uk-grid-match\" uk-grid>\n        <div ng-repeat=\"support in $ctrl.supports\">\n          <div class=\"uk-card uk-margin-top\" style=\"background: #FFF\">\n            <div class=\"uk-card-header\">\n              <h3 class=\"uk-card-title\">{{ support.title }}</h3>\n              <p ng-if=\"support.meta\" class=\"uk-text-meta\">{{ support.meta }}</p>\n            </div>\n            <div class=\"uk-card-body\">\n              <ul class=\"uk-list\">\n                <li ng-repeat=\"(title, link) in support.links\"><a href=\"{{link}}\">{{title}}</a></li>\n              </ul>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n  </div>\n</div>\n";
+module.exports = "<sr-section innerid=\"support\" background-img=\"/images/infosupport.jpg\" background-color=\"rgba(191, 255, 242, 0.8)\">\n  <div>\n    <h1 class=\"title\">Support and Information</h1>\n    Places to find mental health support online\n  </div>\n\n  <div class=\"uk-child-width-1-3@m uk-grid-small uk-grid-match\" uk-grid>\n    <sr-card\n      ng-repeat=\"support in $ctrl.supports\"\n      title=\"{{support.title}}\"\n      meta=\"{{support.meta}}\">\n      <ul class=\"uk-list\">\n        <li ng-repeat=\"(title, link) in support.links\"><a href=\"{{link}}\">{{title}}</a></li>\n      </ul>\n    </sr-card>\n  </div>\n\n</sr-section>\n";
 
 /***/ }),
 /* 318 */
@@ -8140,7 +8135,7 @@ module.exports = "<iframe\n  src=\"{{$ctrl.facebook_share_iframe_url}}\"\n  widt
 /* 320 */
 /***/ (function(module, exports) {
 
-module.exports = "<a\n  href=\"https://twitter.com/share\"\n  class=\"twitter-share-button\"\n  data-url=\"{{$ctrl.componentURL}}\"\n  data-show-count=\"false\">\n  Tweet\n</a>\n    <script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n";
+module.exports = "<a\n  href=\"https://twitter.com/share\"\n  class=\"twitter-share-button\"\n  data-url=\"{{$ctrl.componentURL}}\"\n  data-show-count=\"false\">\n  Tweet\n</a>\n";
 
 /***/ }),
 /* 321 */
@@ -8152,7 +8147,7 @@ module.exports = "<div style=\"margin-top: 100px\">\n  <div class=\"uk-container
 /* 322 */
 /***/ (function(module, exports) {
 
-module.exports = "<sr-card ng-click=\"$ctrl.zoom()\" href=\"#story{{$ctrl.story.id}}\" style=\"cursor: pointer\" uk-toggle\n  image=\"{{$ctrl.story.image}}\"\n  title=\"{{$ctrl.story.title}}\"\n  body=\"{{$ctrl.story.short}}\"\n  meta=\"— {{$ctrl.story.name}}\">\n</sr-card>\n\n<div id=\"story{{$ctrl.story.id}}\" ng-class=\"{'uk-modal-full': $ctrl.story.image}\" uk-modal>\n  <div ng-if=\"$ctrl.zoomed && $ctrl.story.image\" class=\"uk-modal-dialog\">\n    <button class=\"uk-modal-close-full uk-close-large\" type=\"button\" uk-close></button>\n    <div class=\"uk-grid-collapse uk-child-width-1-2@s uk-flex-middle\" uk-grid>\n      <div class=\"uk-background-cover\" style=\"background-image: url('{{$ctrl.story.image}}');\" uk-height-viewport></div>\n      <div class=\"uk-padding-large\">\n        <h1>{{$ctrl.story.title}}</h1>\n        <p>{{$ctrl.story.story}}</p>\n        <span class=\"uk-text-meta\">— {{$ctrl.story.name}}</span>\n        <p>\n          <sr-facebook-share link=\"{{$ctrl.componentURL}}\"></sr-facebook-share>\n          <sr-twitter-share link=\"{{$ctrl.componentURL}}\"></sr-twitter-share>\n        </p>\n      </div>\n    </div>\n  </div>\n\n  <div ng-if=\"$ctrl.zoomed && !$ctrl.story.image\" class=\"uk-modal-dialog uk-modal-body\">\n    <button class=\"uk-modal-close-default\" type=\"button\" uk-close></button>\n    <h2 class=\"uk-modal-title\">{{$ctrl.story.title}}</h2>\n    <p>{{$ctrl.story.story}}</p>\n    <span class=\"uk-text-meta\">— {{$ctrl.story.name}}</span>\n    <p>\n      <sr-facebook-share link=\"{{$ctrl.componentURL}}\"></sr-facebook-share>\n      <a href=\"https://twitter.com/share\" class=\"twitter-share-button\" data-url=\"{{$ctrl.componentURL}}\" data-show-count=\"false\">Tweet</a><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n    </p>\n  </div>\n</div>\n";
+module.exports = "<sr-card\n  ng-click=\"$ctrl.zoom()\"\n  href=\"#story{{$ctrl.story.id}}\"\n  style=\"cursor: pointer\"\n  uk-toggle\n  hover=\"true\"\n  image=\"{{$ctrl.story.image}}\"\n  title=\"{{$ctrl.story.title}}\"\n  meta=\"— {{$ctrl.story.name}}\">\n  <p>{{$ctrl.story.short}}</p>\n</sr-card>\n\n<div id=\"story{{$ctrl.story.id}}\" ng-class=\"{'uk-modal-full': $ctrl.story.image}\" uk-modal>\n  <div ng-if=\"$ctrl.zoomed && $ctrl.story.image\" class=\"uk-modal-dialog\">\n    <button class=\"uk-modal-close-full uk-close-large\" type=\"button\" uk-close></button>\n    <div class=\"uk-grid-collapse uk-child-width-1-2@s uk-flex-middle\" uk-grid>\n      <div class=\"uk-background-cover\" style=\"background-image: url('{{$ctrl.story.image}}');\" uk-height-viewport></div>\n      <div class=\"uk-padding-large\">\n        <h1>{{$ctrl.story.title}}</h1>\n        <p>{{$ctrl.story.story}}</p>\n        <span class=\"uk-text-meta\">— {{$ctrl.story.name}}</span>\n        <p>\n          <sr-facebook-share link=\"{{$ctrl.componentURL}}\"></sr-facebook-share>\n          <sr-twitter-share link=\"{{$ctrl.componentURL}}\"></sr-twitter-share>\n        </p>\n      </div>\n    </div>\n  </div>\n\n  <div ng-if=\"$ctrl.zoomed && !$ctrl.story.image\" class=\"uk-modal-dialog uk-modal-body\">\n    <button class=\"uk-modal-close-default\" type=\"button\" uk-close></button>\n    <h2 class=\"uk-modal-title\">{{$ctrl.story.title}}</h2>\n    <p>{{$ctrl.story.story}}</p>\n    <span class=\"uk-text-meta\">— {{$ctrl.story.name}}</span>\n    <p>\n      <sr-facebook-share link=\"{{$ctrl.componentURL}}\"></sr-facebook-share>\n      <a href=\"https://twitter.com/share\" class=\"twitter-share-button\" data-url=\"{{$ctrl.componentURL}}\" data-show-count=\"false\">Tweet</a><script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\n    </p>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 323 */
@@ -8904,6 +8899,72 @@ module.exports = "<sr-card ng-click=\"$ctrl.zoom()\" href=\"#story{{$ctrl.story.
 __webpack_require__(115);
 module.exports = __webpack_require__(114);
 
+
+/***/ }),
+/* 325 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.contactusComponent = undefined;
+
+var _contactusComponent = __webpack_require__(326);
+
+var _contactusComponent2 = _interopRequireDefault(_contactusComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var contactusComponent = exports.contactusComponent = {
+  template: _contactusComponent2.default,
+  controller: function controller() {}
+};
+
+/***/ }),
+/* 326 */
+/***/ (function(module, exports) {
+
+module.exports = "<sr-section innerid=\"contactus\" background-img=\"/images/contactus.jpg\" background-color=\"rgba(255, 255, 255, 0.8)\">\n  <div class=\"uk-width-1-3@l uk-width-1@xs\">\n    <sr-card title=\"Contact us\">\n      <form action=\"https://formspree.io/soulrelicsmuseum@outlook.com\" method=\"POST\">\n        <div class=\"uk-margin\">\n          <input name=\"name\" class=\"uk-input\" type=\"text\" placeholder=\"Name\">\n        </div>\n        <div class=\"uk-margin\">\n          <input name=\"_replyto\" class=\"uk-input\" type=\"email\" placeholder=\"Email\">\n        </div>\n        <div class=\"uk-margin\">\n          <input name=\"subject\" class=\"uk-input\" type=\"text\" placeholder=\"Subject\">\n        </div>\n        <div class=\"uk-margin\">\n          <textarea name=\"comment\" class=\"uk-textarea\" placeholder=\"Comment\" style=\"resize: none;\" rows=\"5\"></textarea>\n        </div>\n        <input class=\"uk-button uk-button-default\" type=\"submit\" value=\"Send\">\n      </form>\n    </sr-card>\n  </div>\n\n</sr-section>\n";
+
+/***/ }),
+/* 327 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.sectionComponent = undefined;
+
+var _sectionComponent = __webpack_require__(328);
+
+var _sectionComponent2 = _interopRequireDefault(_sectionComponent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var sectionComponentController = function sectionComponentController() {};
+
+var sectionComponent = exports.sectionComponent = {
+  bindings: {
+    innerid: "@",
+    backgroundImg: "@",
+    backgroundColor: "@"
+  },
+  transclude: true,
+  template: _sectionComponent2.default,
+  controller: sectionComponentController
+};
+
+/***/ }),
+/* 328 */
+/***/ (function(module, exports) {
+
+module.exports = "<div ng-attr-id=\"{{$ctrl.innerid}}\" class=\"uk-cover-container\" uk-height-viewport>\n  <img class=\"margin-large-top\" ng-src=\"{{$ctrl.backgroundImg}}\" uk-cover>\n  <div class=\"uk-overlay uk-position-cover uk-dark uk-flex uk-flex-column \"\n    uk-scrollspy=\"cls:uk-animation-fade; offset-top: -80; repeat: true; delay: 100\"\n    style=\"background: {{$ctrl.backgroundColor}}\">\n    <div class=\"uk-overflow-auto\" style=\"margin-top: 80px\">\n      <div ng-transclude></div>\n    </div>\n  </div>\n</div>\n\n";
 
 /***/ })
 /******/ ]);

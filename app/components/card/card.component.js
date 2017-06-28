@@ -4,9 +4,10 @@ export var cardComponent = {
   bindings: {
     image: '@',
     title: '@',
-    body: '@',
     meta: '@',
+    hover: '@',
   },
+  transclude: true,
   template: cardTemplate,
   controller: () => {}
 };

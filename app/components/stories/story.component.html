@@ -1,8 +1,13 @@
-<sr-card ng-click="$ctrl.zoom()" href="#story{{$ctrl.story.id}}" style="cursor: pointer" uk-toggle
+<sr-card
+  ng-click="$ctrl.zoom()"
+  href="#story{{$ctrl.story.id}}"
+  style="cursor: pointer"
+  uk-toggle
+  hover="true"
   image="{{$ctrl.story.image}}"
   title="{{$ctrl.story.title}}"
-  body="{{$ctrl.story.short}}"
   meta="— {{$ctrl.story.name}}">
+  <p>{{$ctrl.story.short}}</p>
 </sr-card>
 
 <div id="story{{$ctrl.story.id}}" ng-class="{'uk-modal-full': $ctrl.story.image}" uk-modal>
