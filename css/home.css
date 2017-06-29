@@ -12,7 +12,3 @@ sr-home .title{
  font-weight: 600;
  text-transform: uppercase;
 }
-
-body{
-  min-height: 100vh;
-}
