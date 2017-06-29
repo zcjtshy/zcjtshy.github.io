@@ -31,6 +31,8 @@ export default [function(){
     setCellsLefts($cells, columnCount);
     // set tops
     setCellsTops($cells, columnCount);
+
+    $(element).css('height', getOccupiedHeight($cells) + 'px');
   }
   
   function resetCells($cells){
@@ -67,6 +69,12 @@ export default [function(){
         return columnTops[i] + 'px';
       });
     });
+  }
+
+  function getOccupiedHeight($cells){
+    return Math.max(...$cells.map(function(){
+      return $(this).offset().top + $(this).outerHeight(true);
+    }).toArray());
   }
 
   function allocateCellsIntoCols($cells, columnCount){

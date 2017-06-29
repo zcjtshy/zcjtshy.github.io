@@ -1,4 +1,5 @@
 <sr-card
+  ng-attr-id="storycard{{$ctrl.story.id}}"
   ng-click="$ctrl.zoom()"
   style="cursor: pointer"
   uk-toggle="target: #story{{$ctrl.story.id}}"
@@ -10,13 +11,13 @@
 </sr-card>
 
 <div id="story{{$ctrl.story.id}}" ng-class="{'uk-modal-full': $ctrl.story.image}" uk-modal>
-  <div ng-if="$ctrl.story.image" class="uk-modal-dialog">
+  <div ng-if="$ctrl.zoomed && $ctrl.story.image" class="uk-modal-dialog">
     <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
     <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
       <div class="uk-background-cover" style="background-image: url('{{$ctrl.story.image}}');" uk-height-viewport></div>
       <div class="uk-padding-large">
         <h1>{{$ctrl.story.title}}</h1>
-        <p>{{$ctrl.story.story}}</p>
+        <p style="white-space: pre-line">{{$ctrl.story.story}}</p>
         <span class="uk-text-meta">— {{$ctrl.story.name}}</span>
         <p>
           <sr-facebook-share link="{{$ctrl.componentURL}}"></sr-facebook-share>
@@ -26,14 +27,14 @@
     </div>
   </div>
 
-  <div ng-if="!$ctrl.story.image" class="uk-modal-dialog uk-modal-body">
+  <div ng-if="$ctrl.zoomed && !$ctrl.story.image" class="uk-modal-dialog uk-modal-body">
     <button class="uk-modal-close-default" type="button" uk-close></button>
     <h2 class="uk-modal-title">{{$ctrl.story.title}}</h2>
-    <p>{{$ctrl.story.story}}</p>
+    <p style="white-space: pre-line">{{$ctrl.story.story}}</p>
     <span class="uk-text-meta">— {{$ctrl.story.name}}</span>
     <p>
       <sr-facebook-share link="{{$ctrl.componentURL}}"></sr-facebook-share>
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{$ctrl.componentURL}}" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <sr-twitter-share link="{{$ctrl.componentURL}}"></sr-twitter-share>
     </p>
   </div>
 </div>
