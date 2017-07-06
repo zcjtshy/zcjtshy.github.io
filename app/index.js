@@ -12,23 +12,24 @@ const app = angular.module('soulRelics', ['ui.router'])
   .service('storiesService', storiesService);
 
 const components = {
-  'srNav'           : requireComponent('nav/nav.component'),
+  'srNav'             : requireComponent('nav/nav.component'),
 
-  'srCard'          : requireComponent('card/card.component'),
+  'srCard'            : requireComponent('card/card.component'),
 
-  'srFacebookShare' : requireComponent('share-buttons/facebook-share.component'),
-  'srTwitterShare'  : requireComponent('share-buttons/twitter-share.component'),
+  'srFacebookShare'   : requireComponent('share-buttons/facebook-share.component'),
+  'srTwitterShare'    : requireComponent('share-buttons/twitter-share.component'),
 
-  'srHome'          : requireComponent('home/home.component'),
-  'srSection'       : requireComponent('home/section.component'),
-  'srDotnav'        : requireComponent('home/dotnav.component'),
-  'srCover'         : requireComponent('home/cover.component'),
-  'srAbout'         : requireComponent('home/about.component'),
-  'srSupport'       : requireComponent('home/support.component'),
-  'srContactus'     : requireComponent('home/contactus.component'),
+  'srHome'            : requireComponent('home/home.component'),
+  'srSection'         : requireComponent('home/section.component'),
+  'srDotnav'          : requireComponent('home/dotnav.component'),
+  'srCover'           : requireComponent('home/cover.component'),
+  'srAbout'           : requireComponent('home/about.component'),
+  'srSupport'         : requireComponent('home/support.component'),
+  'srContactus'       : requireComponent('home/contactus.component'),
 
-  'srStories'       : requireComponent('stories/stories.component'),
-  'srStory'         : requireComponent('stories/story.component'),
+  'srStories'         : requireComponent('stories/stories.component'),
+  'srStorySubmission' : requireComponent('stories/storySubmission.component'),
+  'srStory'           : requireComponent('stories/story.component'),
 };
 
 // register all components
