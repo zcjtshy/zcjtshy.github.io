@@ -9408,7 +9408,11 @@ var _storySubmissionComponent2 = _interopRequireDefault(_storySubmissionComponen
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var STORY_SUBMISSION_LINK = 'https://getform.org/u/027515fb-4438-4ecf-ac0d-dc917c568081';
+/*
+ * // Jason's test link:
+ * const STORY_SUBMISSION_LINK = 'https://getform.org/u/027515fb-4438-4ecf-ac0d-dc917c568081';
+ */
+var STORY_SUBMISSION_LINK = 'https://www.getform.org/u/171c46e8-ed38-40a3-a5de-7d8ac7f61a3d';
 var PLACE_HOLDERS = ['Name', 'Email', 'Your story', 'Story picture (optional)'];
 
 exports.default = {
