@@ -139,8 +139,7 @@ People are taking their own lives in dreadful distress due to these assessments 
     image:'',
     filter:['Eating Disorder'],
     story:`I think playing the guitar has always been an outlet for all these emotions that you can’t express in words. Music does that for people. It’s something that’s not literal, but helps you get out and say what you wanna say.When I was really ill with anorexia, it was a method of channeling all this energy that I would have otherwise put into something destructive, into making something really positive. It’s something that I enjoy, something that other people love to hear. So, channeling all those bad things into something good.`
-  },
-    
+  },  
 ];// append each image with the directory
 stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);
