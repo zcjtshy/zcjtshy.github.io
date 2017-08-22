@@ -106,7 +106,7 @@ People are taking their own lives in dreadful distress due to these assessments 
     name:'Ellie, BBC News, Calming Touch',
     image:'',
     filter:['body'],
-    story: `My Hula hoop is soothing to me and is probably the reasons why I am alive. Discovering hooping gave me purpose to my life, espeically in terms of accepting my body.`
+    story: `My Hula hoop is soothing to me and is probably the reasons why I am alive. Discovering hooping gave me purpose to my life, espeically in terms of accepting my body.`,
   },
     {
     id:10,
@@ -114,7 +114,7 @@ People are taking their own lives in dreadful distress due to these assessments 
     name:'Cal, BBC News, Calming Touch',
     image:'',
     filter:['anxiety'],
-    story: `These beads help me to bring my awareness intensely into the present, where I can't worry about the future, or dwell on the past. I first started using the beads when I was managing large-scale events. It was quite stressful at times and in situations like these your mind naturally scans the environment for every potential thing that could go wrong. You find yourself catastrophising. It's like when you have a computer with too many tabs open. You can't really focus and eventually the computer can crash because you have too much going on at once. These beads are a way of closing all the tabs in my mind and bringing myself back into the present moment where I can focus on what is in front of me.`
+    story: `These beads help me to bring my awareness intensely into the present, where I can't worry about the future, or dwell on the past. I first started using the beads when I was managing large-scale events. It was quite stressful at times and in situations like these your mind naturally scans the environment for every potential thing that could go wrong. You find yourself catastrophising. It's like when you have a computer with too many tabs open. You can't really focus and eventually the computer can crash because you have too much going on at once. These beads are a way of closing all the tabs in my mind and bringing myself back into the present moment where I can focus on what is in front of me.`,
   },
      {
     id:11,
@@ -122,7 +122,7 @@ People are taking their own lives in dreadful distress due to these assessments 
     name:'Ellen, BBC News, Calming Touch',
     image:'',
     filter:['Eating Disorder'],
-    story:`I was given this small stuffed dog when I was five after we lost our family dog. I named her Sophie, and for a few years I took her everywhere with me. By the time I developed my eating disorder at the age of 12 we'd moved house a few times and Sophie had been placed in a box in an attic somewhere and forgotten about. Fast-forward 18 years, having moved 500 miles away and then back again, I was walking through town one day when I spotted Sophie in the window of a charity shop. I knew it was her instantly because she has a very distinct scratch on her nose. Sophie once again became my loyal companion. I suffer from anxiety so I hold her in the evenings, which is when I really struggle with obsessional thoughts. She helps me feel a little calmer and safer, and gives me something soft to keep me grounded.`
+    story:`I was given this small stuffed dog when I was five after we lost our family dog. I named her Sophie, and for a few years I took her everywhere with me. By the time I developed my eating disorder at the age of 12 we'd moved house a few times and Sophie had been placed in a box in an attic somewhere and forgotten about. Fast-forward 18 years, having moved 500 miles away and then back again, I was walking through town one day when I spotted Sophie in the window of a charity shop. I knew it was her instantly because she has a very distinct scratch on her nose. Sophie once again became my loyal companion. I suffer from anxiety so I hold her in the evenings, which is when I really struggle with obsessional thoughts. She helps me feel a little calmer and safer, and gives me something soft to keep me grounded.`,
   },
      {
     id:12,
@@ -130,7 +130,7 @@ People are taking their own lives in dreadful distress due to these assessments 
     name:'Millie, BBC News, Calming Touch',
     image:'',
     filter:['depression'],
-    story:`My photograph album helps me whenever my depression feels suffocating. Sometimes it all gets too much but I know I can find solace in my album. It's full of photographs from happier days, and it helps remind me that whatever I am experiencing in that particular moment will pass, and that there are many more happy days to come. It grounds me and stops my mind from racing. Typically I over analyse things and anxiety usually accompanies my depressive bouts, so having my album close to hand really stops my mind from overthinking. It brings me back to reality, and the reality is that this, too, shall pass.`
+    story:`My photograph album helps me whenever my depression feels suffocating. Sometimes it all gets too much but I know I can find solace in my album. It's full of photographs from happier days, and it helps remind me that whatever I am experiencing in that particular moment will pass, and that there are many more happy days to come. It grounds me and stops my mind from racing. Typically I over analyse things and anxiety usually accompanies my depressive bouts, so having my album close to hand really stops my mind from overthinking. It brings me back to reality, and the reality is that this, too, shall pass.`,
   },
   {
   id:13,
@@ -138,7 +138,7 @@ People are taking their own lives in dreadful distress due to these assessments 
     name:'Abi, BBC News, Calming Touch',
     image:'',
     filter:['Eating Disorder'],
-    story:`I think playing the guitar has always been an outlet for all these emotions that you can’t express in words. Music does that for people. It’s something that’s not literal, but helps you get out and say what you wanna say.When I was really ill with anorexia, it was a method of channeling all this energy that I would have otherwise put into something destructive, into making something really positive. It’s something that I enjoy, something that other people love to hear. So, channeling all those bad things into something good.`
+    story:`I think playing the guitar has always been an outlet for all these emotions that you can’t express in words. Music does that for people. It’s something that’s not literal, but helps you get out and say what you wanna say.When I was really ill with anorexia, it was a method of channeling all this energy that I would have otherwise put into something destructive, into making something really positive. It’s something that I enjoy, something that other people love to hear. So, channeling all those bad things into something good.`,
   },  
 ];// append each image with the directory
 stories.forEach((s) => {
