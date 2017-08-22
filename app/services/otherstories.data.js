@@ -89,7 +89,7 @@ I left home.`,
   },
   {
     id:8,
-    title:'Brown Envelop from the Department of Work and Pensions',
+    title:'Brown Envelope from the Department of Work and Pensions',
     name:'Blog by Paula Peters on the Mental Health Resistance Network',
     image:'',
     filter:['benefits'],
@@ -99,7 +99,24 @@ We live in fear of income insecurity, never knowing when your next assessment wi
 We know of many people who have harmed themselves rather than go through a WCA again, or visit the job centre. I was so traumatised by the fear of the WCA I was hospitalised before the process even started, tried to kill myself over it, a story I have shared with the media and at meetings many times. My story is one of thousands who feel the same way. Believe me.
 We are seeing a mass social cleansing of Housing Benefit claimants out of London and elsewhere as the Benefit Cap came into force and was lowered even further last year. Who despite everything, struggled to find work, was skipping meals to feed her kids. A story that is replayed in every community in the UK. Two children in every class go to school hungry. Three years ago in London there was a story of children stealing frozen meat to eat. Foodbank use is skyrocketing, poverty is skyrocketing, homelessness is rocketing, and the deaths from the cuts are skyrocketing. That is massively important to stress.
 People are taking their own lives in dreadful distress due to these assessments and the aftermarth of them. Just recently a lady took her own life after being told she did not qualify for PIP. Atos Kills again. This is a travesty, this is social injustice and this is grave and systematic abuse of human rights on a scale so big and done in such a silent way people are disbeliving it is happening, but happening it is.`,
-  }
+  },
+  {
+    id:9,
+    title: 'Hula Hoop',
+    name:'Ellie, BBC News, Calming Touch',
+    image:'',
+    filter:['body'],
+    story: `My Hula hoop is soothing to me and is probably the reasons why I am alive. Discovering hooping gave me purpose to my life, espeically in terms of accepting my body.`
+  },
+    {
+    id:10,
+    title: '',
+    name:'',
+    image:'',
+    filter:[''],
+    story:
+  },
+    
 ];// append each image with the directory
 stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);
