@@ -110,6 +110,14 @@ People are taking their own lives in dreadful distress due to these assessments 
   },
     {
     id:10,
+    title: 'Beads',
+    name:'Cal, BBC News, Calming Touch',
+    image:'',
+    filter:['anxiety'],
+    story: `These beads help me to bring my awareness intensely into the present, where I can't worry about the future, or dwell on the past. I first started using the beads when I was managing large-scale events. It was quite stressful at times and in situations like these your mind naturally scans the environment for every potential thing that could go wrong. You find yourself catastrophising. It's like when you have a computer with too many tabs open. You can't really focus and eventually the computer can crash because you have too much going on at once. These beads are a way of closing all the tabs in my mind and bringing myself back into the present moment where I can focus on what is in front of me.`
+  },
+     {
+    id:11,
     title: '',
     name:'',
     image:'',
