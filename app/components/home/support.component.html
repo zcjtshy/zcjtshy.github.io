@@ -1,0 +1,16 @@
+<sr-section innerid="support" background-img="{{$ctrl.backgroundImg}}" background-color="rgba(191, 255, 242, 0.8)">
+  <div class="uk-flex uk-flex-center">
+    <div class="uk-width-1-2@l">
+      <sr-card
+        title="Support and Information">
+        <p>Places to find mental health support online:</p>
+        <section ng-repeat="support in $ctrl.supports">
+          {{support.title}}
+          <ul class="uk-list">
+            <li ng-repeat="(title, link) in support.links"><a href="{{link}}">{{title}}</a></li>
+          </ul>
+        </section>
+      </sr-card>
+    </div>
+  </div>
+</sr-section>

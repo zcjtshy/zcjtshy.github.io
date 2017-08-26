@@ -1,0 +1,42 @@
+{
+  "name": "zcjtshy.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pushstate-server . $PORT",
+    "start:dev": "lite-server",
+    "build": "webpack",
+    "build:min": "webpack  --optimize-minimize",
+    "clean": "rm -r dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ycmjason/zcjtshy.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ycmjason/zcjtshy.github.io/issues"
+  },
+  "homepage": "https://github.com/ycmjason/zcjtshy.github.io#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "file-loader": "^0.11.2",
+    "html-loader": "^0.4.5",
+    "image-webpack-loader": "^3.3.1",
+    "lite-server": "^2.3.0",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.3",
+    "angular": "^1.6.4",
+    "jquery": "^3.2.1",
+    "pushstate-server": "^3.0.0",
+    "uikit": "^3.0.0-beta.22"
+  }
+}

@@ -1,0 +1,11 @@
+<div ng-attr-id="{{$ctrl.innerid}}" class="uk-cover-container" uk-height-viewport>
+  <img class="margin-large-top" ng-src="{{$ctrl.backgroundImg}}" uk-cover>
+  <div class="uk-overlay uk-position-cover uk-dark uk-flex uk-flex-column "
+    uk-scrollspy="cls:uk-animation-fade; offset-top: -80; repeat: true; delay: 100"
+    style="background: {{$ctrl.backgroundColor}}">
+    <div class="uk-overflow-auto" style="margin-top: 80px">
+      <div ng-transclude></div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,36 @@
+<div class="uk-hidden@m">
+  <nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+      <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
+    </div>
+    <div class="uk-navbar-center">
+      <a class="uk-navbar-item uk-logo" href="#">Soul Relics</a>
+    </div>
+  </nav>
+
+
+  <div id="offcanvas-nav" uk-offcanvas="mode: push; overlay: true">
+    <div class="uk-offcanvas-bar">
+
+      <ul class="uk-nav uk-nav-primary">
+        <li ng-repeat="(name, state) in $ctrl.navs" ui-sref-active="uk-active">
+          <a ui-sref="{{ state }}" uk-toggle="target: #offcanvas-nav">{{ name }}</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+
+<div class="uk-visible@m">
+  <nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+      <a class="uk-navbar-item uk-logo" href="#">Soul Relics</a>
+      <ul class="uk-navbar-nav">
+        <li ng-repeat="(name, state) in $ctrl.navs" ui-sref-active="uk-active">
+          <a ui-sref="{{ state }}">{{ name }}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,12 @@
+<div ng-class="{
+  'uk-card-hover': $ctrl.hover
+}" class="uk-card uk-card-default uk-margin-medium-bottom">
+  <div class="uk-card-media-top" ng-if="$ctrl.image">
+    <img style="transform: none" ng-src="{{$ctrl.image}}">
+  </div>
+  <div class="uk-card-body">
+    <h3 ng-if="$ctrl.title" class="uk-card-title">{{ $ctrl.title }}</h3>
+    <div ng-transclude></div>
+    <span ng-if="$ctrl.meta" class="uk-text-meta">{{ $ctrl.meta }}</span>
+  </div>
+</div>

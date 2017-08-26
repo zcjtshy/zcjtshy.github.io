@@ -1,0 +1,32 @@
+<form
+  action="{{$ctrl.storySubmissionLink}}"
+  enctype="multipart/form-data"
+  method="POST"
+  class="uk-form">
+  <fieldset class="uk-fieldset">
+    <legend>Tell us your story!</legend>
+    <div class="uk-margin">
+      <input class="uk-input" type="text" name="name" placeholder="{{$ctrl.placeHolders[0]}}"></input>
+    </div>
+    <div class="uk-margin">
+      <input class="uk-input" type="email"  name="email" placeholder="{{$ctrl.placeHolders[1]}}"></input>
+    </div>
+    <div class="uk-margin">
+      <textarea rows="5" class="uk-textarea" name="body" placeholder="{{$ctrl.placeHolders[2]}}" style="resize: vertical"></textarea>
+    </div>
+    <div class="uk-margin" uk-margin>
+      <div uk-form-custom="target: >* input[type='text']" style="display: block">
+        <input name="file" type="file">
+        <div class="uk-grid-collapse" uk-grid>
+          <div class="uk-width-expand">
+            <input class="uk-input" type="text" placeholder="{{$ctrl.placeHolders[3]}}" disabled>
+          </div>
+          <div class="uk-width-auto">
+            <button class="uk-button uk-button-default" tabindex="-1">Select</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="uk-form-row"><input class="uk-button uk-button-primary" type="submit"></input></div>
+  </fieldset>
+</form>
