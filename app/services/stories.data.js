@@ -189,7 +189,32 @@ var stories = [
       image:'tennis.png',
       filter:['grief'],
       story: `The day I lost my Pappa the world felt like too much to handle. I was overwhelmed by shock and grief but in that time a helpline volunteer explained to me about how a tennis ball would help me feel better. On the first day grief feels like a tennis ball in a jam jar. It takes over and fills every part. After some time it feels like the tennis ball has moved into a water jug. There is more room and the greif takes slightly less of your thoughts and life. The next time you notice that the tennis ball has moved to a drawer. It is still there but other things start to come into focus. Eventually the tennis ball is just in the same room or house as you. The hurt stays the same but it becomes a smaller part of life as you learn to manage it.`
-    }
+    },
+    {
+    id:18,
+    title:'Dear Diary',
+    name:'Pat',
+    image:'deardiary.jpg',
+    filter:['harrassment'],
+    story:`Dear Diary, It’s me again. I feel stressed and depressed. No matter how hard I tried, I still failed the exams. A teaching assistant kept harassing me before the exams and he annoys me so much. I am so fed up but at the same time I can’t report him. After rejecting his invitation for lunch I feel scared. I am scared of what he will do if I report him to the instructor. 
+            Anyway, thanks for listening to my complaints.`
+    },
+  {
+    id:19,
+    title:'Calm',
+    name:'Van',
+    image:'calmbadge.jpg',
+    filter:['grief'],
+    story:`The day after I was told my grandpa passed away I was stressed about going to work. The moment I told my colleague she gave me this pin. Upon holding and touching it I was immediately soothed by the word “calm” and by the “band-aid” symbol. This has been my go-to object to look at and has been in my bag ever since.`
+  },
+  {
+    id:21,
+    title:'Soul Wraps',
+    name:'Aspie Boxer',
+    image:'soulwrap.jpg',
+    filter:['aspergers'],
+    story:`I've struggled with Aspergers all my life. It was even tougher because I had never heard of the condition until the last two years, and it has taken that long to fully comprehend what it is and how my life has been shaped by it. As an Aspie I need rituals and routine to help me focus and get through the day. There are negative rituals and repetitive negative thoughts. They paralyse you and weigh you down so that even when you escape you're so tired to make the most of whatever the day has left. By a sort of accident of life I discovered boxing. I was dating (now an ex) and was enjoying a ritual Friday morning. Woke up, read the papers and magazine and watched a bit of MTV. The show was 'Made' and it was about a young girl who was at risk being offered a chance to turn her life around by boxing. The program showed her skipping, punching bags, running in circles... it looked bliss. I told my ex, I want to do that. She told me don't be daft you'll just get hurt. This was when I was in an absolute trough of my life, in the worst place I could have been. We broke up. I was devastated. My rituals had been thrown into chaos. And then I moved house and found a boxing gym nearby. I started going, and quickly became a regular. I couldn't run more than 30 seconds when I started. I was totally unfit. I might have been nearly 100kg, I don't know and can't recall but do know that I had problems with my back and couldn't walk longer than 30 minutes. Every night I would train for an hour. A similar routine every night. I loved it. Skipping for 10-12 minutes. A 10 minute run around the housing complex. Some bag work, a cardio exercise. Footwork. Almost the same each night. I got stronger and stronger - and not just physically, mentally too. I was able to join social clubs, something I've never been able to do. I welcomed new friends to my place for dinners. Eventually I was so confident and strong I toured Europe on my own, casting out all fears of being alone. I would visit different gyms as I went, leaning on them as a social crutch knowing that in each one the routines would be similar and familiar. I could break a bit of my ritual - but could still reach out like a young swimmer not venturing far from the side of the pool. Boxing was perfect, if someone was making me anxious I could just smack the anxiety out into a pad or into a body shot. And they could return the favour. I train almost every day when I'm fit. I have to. It's my ritual and is part of me like my arms or legs. If I can't train for a couple of days, it's like a phantom limb. I sense something is wrong and the anxiety builds. So now whenever I travel, almost the first thing I look for is whether there's a gym nearby to where I'm staying. I plan my meetings around training. And I've become a very happy gym tourist having boxed in Russia, Sri Lanka, Spain, South Africa and even Hollywood. My 'relic' are the boxing bandages. Not only do they keep my small hand bones safe, but they are responsible for holding my psyche together and helping me build all the positive elements in my life to date.`
+  },
 ];// append each image with the directory
 stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);
