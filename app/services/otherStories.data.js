@@ -91,7 +91,7 @@ I left home.`,
     id:8,
     title:'Brown Envelope from the Department of Work and Pensions',
     name:'Blog by Paula Peters on the Mental Health Resistance Network',
-    image:'brownenvelope.jpe',
+    image:'brownenvelope.jpg',
     filter:['benefits'],
     story:`Authorised by Paula Peters (original at http://mentalhealthresistance.org/2017/02/the-conscious-cruelty-of-the-benefits-system/) 
 Many have stated the fear of the DWP Brown envelope, as I have myself, getting obsessed with the post delivery, wondering if you will get a brown envelope today, an ESA 50, a PIP 2 Form or the fact your money has stopped.
