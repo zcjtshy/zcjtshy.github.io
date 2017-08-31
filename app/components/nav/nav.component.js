@@ -5,6 +5,7 @@ function navController(){
     "Home": "home",
     "Stories": "stories",
     "Other stories": "otherStories",
+    "About Us": "aboutUs"
   };
 }
 

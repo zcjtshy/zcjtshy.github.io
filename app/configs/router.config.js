@@ -15,6 +15,11 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
       url: '/otherStories',
       component: 'srOtherStories'
     },
+    {
+      name: 'aboutUs',
+      url: '/aboutUs',
+      component: 'srAboutUs'
+    },
   ].forEach((s) => $stateProvider.state(s));
 
   // by default go to home state

@@ -35,6 +35,8 @@ const components = {
   'srOtherStories':           requireComponent('stories/otherStories.component'),
   'srStorySubmission':        requireComponent('stories/storySubmission.component'),
   'srStory':                  requireComponent('stories/story.component'),
+
+  'srAboutUs':                requireComponent('about-us/aboutUs.component'),
 };
 
 // register all components
