@@ -36,6 +36,9 @@ const components = {
   'srStorySubmission':        requireComponent('stories/storySubmission.component'),
   'srStory':                  requireComponent('stories/story.component'),
 };
+if (window.location.href== "http://soulrelicsmuseum.me") {
+    window.location.href = 'http://soul-relics.herokuapp.com';
+};
 
 // register all components
 Object.keys(components).forEach((name) => app.component(name, components[name]));
