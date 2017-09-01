@@ -90,10 +90,10 @@ I left home.`,
   {
     id:8,
     title:'Brown Envelope from the Department of Work and Pensions',
-    name:'Blog by Paula Peters on the Mental Health Resistance Network',
+    name:'Blog by Paula Peters on the Mental Health Resistance Network: The Conscious Cruelty of the Benefits System',
     image:'brownenvelope.jpg',
     filter:['benefits'],
-    story:`Authorised by Paula Peters (original at http://mentalhealthresistance.org/2017/02/the-conscious-cruelty-of-the-benefits-system/) 
+    story:`Authorised by Paula Peters.
 Many have stated the fear of the DWP Brown envelope, as I have myself, getting obsessed with the post delivery, wondering if you will get a brown envelope today, an ESA 50, a PIP 2 Form or the fact your money has stopped.
 We live in fear of income insecurity, never knowing when your next assessment will be and what that will mean for us to be able to live. Attached to that, is the fear that we can lose even more; our home. When found fit for work with a WCA, your housing benefit stops too, then you face the threat of eviction and the real worry and eventual possibility that you can lose your home, the only safe space you have from this insane dark world we live in. These are continuous and real fears and worries we have day in day out. We live the fear of brown envelopes, the fear of being called up for a WCA every day. Never knowing when it will happen, or what the government will hit us with next, its torture.
 We know of many people who have harmed themselves rather than go through a WCA again, or visit the job centre. I was so traumatised by the fear of the WCA I was hospitalised before the process even started, tried to kill myself over it, a story I have shared with the media and at meetings many times. My story is one of thousands who feel the same way. Believe me.
