@@ -243,15 +243,6 @@ I decided to give in my notice, despite not knowing what I'd do next. The follow
 "You will have no job," he read. 
 An incredibly strong feeling of joyful liberation washed over me as my actions from the previous day finally sunk in. I thanked the boy and his mother and went about the rest of the day with renewed zest. Even though I still didn't know what I would be doing in a month's time, I now knew that leaving had been the right decision. For the first time in a long time, the future was looking bright and full of adventure.`
   },
-  {
-    id:25,
-    title:'',
-    name:'',
-    image:'',
-    filter:[''],
-    story:``
-  },
-
 ];// append each image with the directory
 stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);

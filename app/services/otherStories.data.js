@@ -38,7 +38,7 @@ var stories = [
     title:'A poem',
     name:'Hikayetna. Stories from Syria, Hope and Optimism for Refugees',
     image:'',
-    filter:[''],
+    filter:['trauma'],
     story:`I left that table with three books, a tea glass dirty
 An ashtray
 The TV remote still lost somewhere between cushions
@@ -145,7 +145,7 @@ People are taking their own lives in dreadful distress due to these assessments 
     title:'A Bedsheet',
     name:'Day Joyce (nee Daisy Sage), Hong Kong internee. An exhibit from Imperial War Museum, London',
     image:'bedsheet.jpg',
-    filter:['war'],
+    filter:['war','trauma'],
     story:`These objects during second world war bring to life the people and societies that made them, used them and were attacked by them or kept them as mementoes. Sometimes they carry painful or treasured memories. Sometimes they act as points of reflection on what took place or how lives were changed. 
 The British colony of Hong Kong surrendered to the Japanese on Christmas Day 1941. Hundreds of European civilians were interned in a camp near Stanley Prison. Daisy Sage, known as “Day”, moved to Hong Kong in 1940. She remained as an auxiliary nurse in the La Salle College Hospital until sent to Stanley. From the start Day used this Bed sheet to embroider a remarkable coded journal of her imprisonment. On this bedsheet, using whatever coloured threads she could find, Day documented her experiences as a prisoner of the Japanese. She noted names, places and events, using 365 words from her dictionary to mark the passage of time. 
 “The sheet holds so many stories. You will understand why, for a long time after the war, I could not look at it. But eventually it came to light and gave up some of its secrets. It tells only true-life stories and now enough time has elapsed for the fierce agonies of remembrance to be controlled and for the worth-while, interesting core of the business to remain in the memory.”
