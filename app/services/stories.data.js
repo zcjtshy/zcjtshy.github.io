@@ -215,6 +215,43 @@ var stories = [
     filter:['aspergers'],
     story:`I've struggled with Aspergers all my life. It was even tougher because I had never heard of the condition until the last two years, and it has taken that long to fully comprehend what it is and how my life has been shaped by it. As an Aspie I need rituals and routine to help me focus and get through the day. There are negative rituals and repetitive negative thoughts. They paralyse you and weigh you down so that even when you escape you're so tired to make the most of whatever the day has left. By a sort of accident of life I discovered boxing. I was dating (now an ex) and was enjoying a ritual Friday morning. Woke up, read the papers and magazine and watched a bit of MTV. The show was 'Made' and it was about a young girl who was at risk being offered a chance to turn her life around by boxing. The program showed her skipping, punching bags, running in circles... it looked bliss. I told my ex, I want to do that. She told me don't be daft you'll just get hurt. This was when I was in an absolute trough of my life, in the worst place I could have been. We broke up. I was devastated. My rituals had been thrown into chaos. And then I moved house and found a boxing gym nearby. I started going, and quickly became a regular. I couldn't run more than 30 seconds when I started. I was totally unfit. I might have been nearly 100kg, I don't know and can't recall but do know that I had problems with my back and couldn't walk longer than 30 minutes. Every night I would train for an hour. A similar routine every night. I loved it. Skipping for 10-12 minutes. A 10 minute run around the housing complex. Some bag work, a cardio exercise. Footwork. Almost the same each night. I got stronger and stronger - and not just physically, mentally too. I was able to join social clubs, something I've never been able to do. I welcomed new friends to my place for dinners. Eventually I was so confident and strong I toured Europe on my own, casting out all fears of being alone. I would visit different gyms as I went, leaning on them as a social crutch knowing that in each one the routines would be similar and familiar. I could break a bit of my ritual - but could still reach out like a young swimmer not venturing far from the side of the pool. Boxing was perfect, if someone was making me anxious I could just smack the anxiety out into a pad or into a body shot. And they could return the favour. I train almost every day when I'm fit. I have to. It's my ritual and is part of me like my arms or legs. If I can't train for a couple of days, it's like a phantom limb. I sense something is wrong and the anxiety builds. So now whenever I travel, almost the first thing I look for is whether there's a gym nearby to where I'm staying. I plan my meetings around training. And I've become a very happy gym tourist having boxed in Russia, Sri Lanka, Spain, South Africa and even Hollywood. My 'relic' are the boxing bandages. Not only do they keep my small hand bones safe, but they are responsible for holding my psyche together and helping me build all the positive elements in my life to date.`
   },
+  {
+    id:22,
+    title:'Partition of india and East and West Pakistan',
+    name:'Mr SS',
+    image:'',
+    filter:['migration','trauma'],
+    story:`My object is an original Bangladeshi cuff-link.“Struggle for peace” I would like to erase the tragic events that took place. My mother came to United Kingdom with my dad, 2 brothers and 2 sisters in the late 50s. Then she moved to London where I was born behind the East London Mosque in 1961. She bought a car and took the car and the family to East Pakistan in 1966.`
+  },
+  {
+    id:23,
+    title:'The Therapeutic Kitchen',
+    name:'Elijah A. Addo, Founder of Food for All Africa, 2017 Queens Young Leader Award',
+    image:'elijah.jpg',
+    filter:['empowerment'],
+    story:`Like many of us, my childhood dream as the only boy among my three sisters was to become a medical doctor but the death of my parent's at the tender age of 14 years made me fall in love with cooking. Every time I am in the kitchen cooking it brings me closer to my mum, because the best moments I enjoyed with her was those we spent in the kitchen. I didn't realize how lucky I was to have become a chef until in 2011, I came into contact with a mentally challenged man who picks leftover food from trash bins in the hotel where I worked to feed his colleagues on the street. Then I realized I could have been one out of the four children in Ghana who miss out of their future ambitions because of hunger and poverty. My name is Chef Elijah A. Addo and am "the doctor in the kitchen" who has set out on a vision to re-invent Africa's food systems by bridging the food gap between plenty and scarce across communities by creating sustainable means of nutrition through food, recovery, redistribution, farming and forum for stakeholders`
+  },
+  {
+    id:24,
+    title:'A Kid and his Chatterbox',
+    name:'Eddie',
+    image:'',
+    filter:['chatterbox.jpg'],
+    story:`I had stopped looking forward to coming into work for the last few months; I was experiencing spiritual unfulfillment, burnout and low self-esteem. 
+I decided to give in my notice, despite not knowing what I'd do next. The following day while volunteering at a children's craft event, a child came up to me out of the blue with his newly made chatterbox. 
+"Pick a colour", he said. "Green." "Okay. Now pick a number". "Seven." "One more number". "Five." He opened the corresponding flap to reveal my fate. 
+"You will have no job," he read. 
+An incredibly strong feeling of joyful liberation washed over me as my actions from the previous day finally sunk in. I thanked the boy and his mother and went about the rest of the day with renewed zest. Even though I still didn't know what I would be doing in a month's time, I now knew that leaving had been the right decision. For the first time in a long time, the future was looking bright and full of adventure.`
+  },
+  {
+    id:25,
+    title:'',
+    name:'',
+    image:'',
+    filter:[''],
+    story:``
+  },
+
 ];// append each image with the directory
 stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);

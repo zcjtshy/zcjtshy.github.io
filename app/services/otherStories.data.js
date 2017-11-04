@@ -139,7 +139,18 @@ People are taking their own lives in dreadful distress due to these assessments 
     image:'guitar.jpg',
     filter:['Eating Disorder'],
     story:`I think playing the guitar has always been an outlet for all these emotions that you can’t express in words. Music does that for people. It’s something that’s not literal, but helps you get out and say what you wanna say.When I was really ill with anorexia, it was a method of channeling all this energy that I would have otherwise put into something destructive, into making something really positive. It’s something that I enjoy, something that other people love to hear. So, channeling all those bad things into something good.`,
-  },  
+  }, 
+  {
+    id:14,
+    title:'A Bedsheet',
+    name:'Day Joyce (nee Daisy Sage), Hong Kong internee. An exhibit from Imperial War Museum, London',
+    image:'bedsheet.jpg',
+    filter:['war'],
+    story:`These objects during second world war bring to life the people and societies that made them, used them and were attacked by them or kept them as mementoes. Sometimes they carry painful or treasured memories. Sometimes they act as points of reflection on what took place or how lives were changed. 
+The British colony of Hong Kong surrendered to the Japanese on Christmas Day 1941. Hundreds of European civilians were interned in a camp near Stanley Prison. Daisy Sage, known as “Day”, moved to Hong Kong in 1940. She remained as an auxiliary nurse in the La Salle College Hospital until sent to Stanley. From the start Day used this Bed sheet to embroider a remarkable coded journal of her imprisonment. On this bedsheet, using whatever coloured threads she could find, Day documented her experiences as a prisoner of the Japanese. She noted names, places and events, using 365 words from her dictionary to mark the passage of time. 
+“The sheet holds so many stories. You will understand why, for a long time after the war, I could not look at it. But eventually it came to light and gave up some of its secrets. It tells only true-life stories and now enough time has elapsed for the fierce agonies of remembrance to be controlled and for the worth-while, interesting core of the business to remain in the memory.”
+`
+  }, 
 ];// append each image with the directory
 stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);
