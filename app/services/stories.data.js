@@ -235,13 +235,24 @@ var stories = [
     id:24,
     title:'A Kid and his Chatterbox',
     name:'Eddie',
-    image:'',
-    filter:['chatterbox.jpg'],
+    image:'chatterbox.jpg',
+    filter:[''],
     story:`I had stopped looking forward to coming into work for the last few months; I was experiencing spiritual unfulfillment, burnout and low self-esteem. 
 I decided to give in my notice, despite not knowing what I'd do next. The following day while volunteering at a children's craft event, a child came up to me out of the blue with his newly made chatterbox. 
 "Pick a colour", he said. "Green." "Okay. Now pick a number". "Seven." "One more number". "Five." He opened the corresponding flap to reveal my fate. 
 "You will have no job," he read. 
 An incredibly strong feeling of joyful liberation washed over me as my actions from the previous day finally sunk in. I thanked the boy and his mother and went about the rest of the day with renewed zest. Even though I still didn't know what I would be doing in a month's time, I now knew that leaving had been the right decision. For the first time in a long time, the future was looking bright and full of adventure.`
+  },
+  {
+    id:25,
+    title:'Stones',
+    name:'Nat F',
+    image:'',
+    filter:['social injustice'],
+    story:`Since reading about the power of crystals and stones, precious and semiprecious alike, many years ago I took the habit to carry stones with me for self healing and protection. My very first one was a clear quartz that I would keep in my pocket when out, or under my pillow when sleeping. My collection of stones kept on growing from time to time with more and more colours and shapes being added to the sets. The Crystal Bible would influence me when purchasing sometimes, according to the power of the stones or what power I was after, while sometimes I would just follow my intuition in picking a stone I had not seen before. 
+Occasionally I still visit these magic shops that on top of the stones sell books and special objects of power and healing and feels like stepping in another World where any worry, pain or misery can get washed away. 
+I handle some of my stones almost everyday, anchoring to these in a meditative and grounding mode when I remember or I need it. I have learnt how important it is to clear our very energetic and emotional surroundings and I often let a stone be the link that lets some light reach me to clear the heavily polluted world we are living in not only my space.
+`
   },
 ];// append each image with the directory
 stories.forEach((s) => {

@@ -151,6 +151,17 @@ The British colony of Hong Kong surrendered to the Japanese on Christmas Day 194
 “The sheet holds so many stories. You will understand why, for a long time after the war, I could not look at it. But eventually it came to light and gave up some of its secrets. It tells only true-life stories and now enough time has elapsed for the fierce agonies of remembrance to be controlled and for the worth-while, interesting core of the business to remain in the memory.”
 `
   }, 
+  {
+    id:15,
+    title:'Boats',
+    name:'Linh Vu. A story from Migration Museum, London',
+    image:'boat.jpg',
+    filter:['migration','trauma'],
+    story:`After the Vietnam war ended, in 1975, those who had opposed the Communist regime were sent to “re-education” camps, where many died. My father was on the “list” to be re-educated.
+In 1979, when I was 7 years old, I escaped from Vietnam with my father in a filmsy wooden boat with 40 people. My mother, sister and brother were left behind in Vietnam. 
+We were at sea for almost two weeks, running out of food and water, before we were rescued by a British ship. We were brought to camps in Singapore and then south of England, before betting settled in Hackney. 
+`
+  },
 ];// append each image with the directory
 stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);
