@@ -2,7 +2,7 @@ import storyTemplate from './story.component.html';
 
 const MAX_WORD_COUNT = 50;
 
-var storyComponentController = ['$location', function($location){
+var storyComponentController = ['$location', '$sce', function($location, $sce){
   var modal_id;
   var $ctrl = this;
   $ctrl.zoomed = false;
@@ -11,7 +11,9 @@ var storyComponentController = ['$location', function($location){
   $ctrl.$onInit = () => {
     modal_id = 'story' + $ctrl.story.id;
     $ctrl.componentURL = window.location.href + '#' + modal_id;
-    $ctrl.story.short = $ctrl.story.story.split(' ', MAX_WORD_COUNT).join(' ');
+    // There's a danger here of splitting a string down an html tag.
+    $ctrl.story.short = $sce.trustAsHtml($ctrl.story.story.split(' ', MAX_WORD_COUNT).join(' '));
+    $ctrl.story.story = $sce.trustAsHtml($ctrl.story.story);
     $ctrl.story.name = $ctrl.story.name || '(Anonymous)';
   };
 
