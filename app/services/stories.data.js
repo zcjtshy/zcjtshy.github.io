@@ -264,13 +264,13 @@ I handle some of my stones almost everyday, anchoring to these in a meditative a
   },
   {
     id:27,
-    title:,
+    title:'Run Talk Run',
     name:'Jess',
     image:'runningshoes.jpg',
     filter:['sports'],
     story:`In October 2017 I created Run Talk Run. A space where people can talk freely about their mental health, whilst jogging alongside one another. The idea is that it's not a "performance-focused" running group but rather just a group of friends coming together to do something great for our mental AND physical health. Running is (and has been for about 4 years now) my sanity. It has pulled me out of my darkest moments, and also created some of my darkest moments too (I've had several running-performance panic attacks where I've genuinely wondered whether I'd ever regain my breath!). That being said, my "item" would most certainly be my running trainers.`
   },
-  }
+  
 ];// append each image with the directory
 stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);

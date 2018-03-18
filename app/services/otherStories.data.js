@@ -166,7 +166,7 @@ We were at sea for almost two weeks, running out of food and water, before we we
     id: 16,
     title:'Project future',
     name:'Project Future, the Journey in the Shadows, An interactive exhibition on young gang members in London',
-    image:'wheel.jpg','scale.jpg',
+    image:'wheel.jpg',
     filter:['gang','poverty'],
     story:`The exhibition gave marginalised young men from the project an opportunity to display their artwork. This artwork took audience through different aspects of their life including school, mental health, poverty, safety, violence & criminal justice. This was a powerful interactive exhibition that used objects to tell stories about struggles. 
     “An exhibition which takes you on a journey of the reality of a young person’s life in the shadows, the story most people don’t get to see. The pain, the suffering, the scars, the hurdles and the struggles we go through and overcome. Come and take the journey with us to feel and understand the life behind the scenes of a young person. As young people who are often labelled as either a “gang member”, “criminal” or “bad kid” we will show you the side of the story that doesn’t get heard. We’ll also share with you our ideas on what makes a difference.” – cited from the event page`
