@@ -254,6 +254,23 @@ Occasionally I still visit these magic shops that on top of the stones sell book
 I handle some of my stones almost everyday, anchoring to these in a meditative and grounding mode when I remember or I need it. I have learnt how important it is to clear our very energetic and emotional surroundings and I often let a stone be the link that lets some light reach me to clear the heavily polluted world we are living in not only my space.
 `
   },
+  {
+    id:26,
+    title:`My Dad's Briefcase`,
+    name:'Ans',
+    image:'suitcase.jpg',
+    filter:['psychosis'],
+    story:`This is my dad’s RAF briefcase and it has always featured in my psychosis. If you can imagine Steve McQueen in the Great Escape, the part where he’s always being returned to the POW camp, well this is the same for my item. Every time I’ve been hospitalised dad’s old RAF briefcase has always been in my hospital room, almost as if it’s been waiting for me to arrive. In a time of massive sleep deprivation seeing this briefcase in hospital (brought by my folks somehow) has not helped my recovery. Its always arrived with me and its time to release it to the museum where it can take its place amongst the items that mean so much to all of us. I’m in a much better place now and one day I hope to not associate the memory of my illness with it as I  am sure he used it for different things in a different time. Thanks for allowing me to release it to you.`,
+  },
+  {
+    id:27,
+    title:,
+    name:'Jess',
+    image:'runningshoes.jpg',
+    filter:['sports'],
+    story:`In October 2017 I created Run Talk Run. A space where people can talk freely about their mental health, whilst jogging alongside one another. The idea is that it's not a "performance-focused" running group but rather just a group of friends coming together to do something great for our mental AND physical health. Running is (and has been for about 4 years now) my sanity. It has pulled me out of my darkest moments, and also created some of my darkest moments too (I've had several running-performance panic attacks where I've genuinely wondered whether I'd ever regain my breath!). That being said, my "item" would most certainly be my running trainers.`
+  },
+  }
 ];// append each image with the directory
 stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);
