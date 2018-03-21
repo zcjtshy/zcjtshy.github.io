@@ -7,7 +7,7 @@
   image="{{$ctrl.story.image}}"
   title="{{$ctrl.story.title}}"
   meta="— {{$ctrl.story.name}}">
-  <p>{{$ctrl.story.short}}</p>
+  <p ng-bind-html="$ctrl.story.short"></p>
 </sr-card>
 
 <div id="story{{$ctrl.story.id}}" ng-class="{'uk-modal-full': $ctrl.story.image}" uk-modal>
@@ -17,7 +17,7 @@
       <div class="uk-background-cover" style="background-image: url('{{$ctrl.story.image}}');" uk-height-viewport></div>
       <div class="uk-padding-large">
         <h1>{{$ctrl.story.title}}</h1>
-        <p style="white-space: pre-line">{{$ctrl.story.story}}</p>
+        <p style="white-space: pre-line" ng-bind-html="$ctrl.story.story"></p>
         <span class="uk-text-meta">— {{$ctrl.story.name}}</span>
         <p>
           <sr-facebook-share link="{{$ctrl.componentURL}}"></sr-facebook-share>
