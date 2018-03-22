@@ -9,7 +9,8 @@
     "start:dev": "lite-server",
     "build": "webpack",
     "build:min": "webpack  --optimize-minimize",
-    "clean": "rm -r dist"
+    "clean": "rm -r dist",
+    "postinstall": "webpack --optimize-minimize"
   },
   "repository": {
     "type": "git",
