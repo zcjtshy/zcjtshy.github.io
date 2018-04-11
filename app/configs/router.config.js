@@ -20,6 +20,16 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
       url: '/aboutUs',
       component: 'srAboutUs'
     },
+    {
+      name: 'start',
+      url: '/exhibit/start',
+      component: 'srstart'
+    },
+    {
+      name: 'end',
+      url: '/exhibit/end',
+      component: 'srend'
+    },
   ].forEach((s) => $stateProvider.state(s));
 
   // by default go to home state

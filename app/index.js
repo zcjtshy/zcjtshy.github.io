@@ -37,6 +37,9 @@ const components = {
   'srStory':                  requireComponent('stories/story.component'),
 
   'srAboutUs':                requireComponent('about-us/aboutUs.component'),
+  'srstart':                  requireComponent('exhibit/start.component'),
+  'srend':                    requireComponent('exhibit/end.component'),
+
 };
 
 // register all components
