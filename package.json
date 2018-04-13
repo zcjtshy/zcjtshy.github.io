@@ -8,6 +8,7 @@
     "start": "pushstate-server . $PORT",
     "start:dev": "lite-server",
     "build": "webpack",
+    "watch": "webpack --watch",
     "build:min": "webpack  --optimize-minimize",
     "clean": "rm -r dist",
     "postinstall": "webpack --optimize-minimize"
