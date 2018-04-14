@@ -30,6 +30,11 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
       url: '/exhibit/end',
       component: 'srend'
     },
+    {
+      name: 'exhibit',
+      url: '/exhibit',
+      component: 'srExhibit'
+    },
   ].forEach((s) => $stateProvider.state(s));
 
   // by default go to home state

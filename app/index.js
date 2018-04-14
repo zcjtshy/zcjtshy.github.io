@@ -39,6 +39,7 @@ const components = {
   'srAboutUs':                requireComponent('about-us/aboutUs.component'),
   'srstart':                  requireComponent('exhibit/start.component'),
   'srend':                    requireComponent('exhibit/end.component'),
+  'srExhibit':                requireComponent('exhibit/exhibit.component'),
 
 };
 
