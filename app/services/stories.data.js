@@ -270,6 +270,49 @@ I handle some of my stones almost everyday, anchoring to these in a meditative a
     filter:['sports'],
     story:`In October 2017 I created Run Talk Run. A space where people can talk freely about their mental health, whilst jogging alongside one another. The idea is that it's not a "performance-focused" running group but rather just a group of friends coming together to do something great for our mental AND physical health. Running is (and has been for about 4 years now) my sanity. It has pulled me out of my darkest moments, and also created some of my darkest moments too (I've had several running-performance panic attacks where I've genuinely wondered whether I'd ever regain my breath!). That being said, my "item" would most certainly be my running trainers.`
   },
+  {
+    id:28,
+    title: 'My Oyster Card',
+    name: 'The Depressed Baker',
+    image: 'oyster.jpg',
+    filter:['suicide'],
+    story: `2 years ago
+
+2 years ago I viewed my oyster pass as one way ticket to an efficient suicide.  One where more importantly, a loved one would not find themselves in the obviously devastating moment, of finding a loved one - me in this specific instance.
+ 
+I will also never forget the moment before I was planning on jumping; whilst waiting for the train to arrive, I picked up a quick call from my partner relating to the shopping, and I thank god every day that I received this totally arbitrary and ultimately meaningless call.  Just hearing my partner's voice dissuaded me from jumping that day.
+
+Now I just think more of the poor TFL drivers, and the sheer emotional strain that each and every jump attempt, must put on them.  
+
+
+1 Year ago
+
+I hated my oyster card with a vengeance 1 year ago, and it often reminds me of the crippling feelings of anxiety, every time I was on the underground when the train would pull up to a new station, close to my old place of work.  I would chew my nails to an inch of their lives, and just pray that no one I knew would get on the train and/or recognise me and engage in conversation
+
+Today
+
+I have used my oyster card to deliver a batch of biscuits, and it forms a necessary part to the strategy that I am trying to implement to change my life, and also hopefully the lives of others too:)
+
+It now represents freedom and hope to me :) 
+`,
+},
+{
+  id: 29,
+  title:'Mother',
+  name: 'anonymous',
+  image: 'girl,jpg',
+  filter:'refugee',
+  story: `I am a refugee from Syria and I left in 2014. Drawing allows you to express your psychological state, just like Van Gogh and his suicide letter. I like drawing female figures, it’s like home and my motherland, like Syria. I cannot think of one object for my soul relics, there’re birds, old valuable pieces, friends, parents, computers, but I left with nothing. `,
+},
+{
+  id: 30,
+  title: 'Firework',
+  name: 'anonymous',
+  image: 'doll.jpg',
+  filter:'refugee',
+  story: `My memory of the war - I remember the night we decided to leave Syria was when there were a lot of loud bombings, the electricity was cut off, it was very dark. We didn’t know what’s happening outside. My children asked me what the sound was, I told them, it was the firework. `,
+},
+
   
 ];// append each image with the directory
 stories.forEach((s) => {
