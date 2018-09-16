@@ -274,7 +274,7 @@ I handle some of my stones almost everyday, anchoring to these in a meditative a
     id:28,
     title: 'My Oyster Card',
     name: 'The Depressed Baker',
-    image: 'oyster.jpg',
+    image: 'oyster.JPG',
     filter:['suicide'],
     story: `2 years ago
 
@@ -295,23 +295,23 @@ I have used my oyster card to deliver a batch of biscuits, and it forms a necess
 
 It now represents freedom and hope to me :) 
 `,
-},
-{
-  id: 29,
-  title:'Mother',
-  name: 'anonymous',
-  image: 'girl,jpg',
-  filter:'refugee',
-  story: `I am a refugee from Syria and I left in 2014. Drawing allows you to express your psychological state, just like Van Gogh and his suicide letter. I like drawing female figures, it’s like home and my motherland, like Syria. I cannot think of one object for my soul relics, there’re birds, old valuable pieces, friends, parents, computers, but I left with nothing. `,
-},
-{
-  id: 30,
-  title: 'Firework',
-  name: 'anonymous',
-  image: 'doll.jpg',
-  filter:'refugee',
-  story: `My memory of the war - I remember the night we decided to leave Syria was when there were a lot of loud bombings, the electricity was cut off, it was very dark. We didn’t know what’s happening outside. My children asked me what the sound was, I told them, it was the firework. `,
-},
+  },
+  {
+   id: 29,
+    title:'Mother',
+    name: 'anonymous',
+    image: 'girl,jpg',
+    filter:'refugee',
+    story: `I am a refugee from Syria and I left in 2014. Drawing allows you to express your psychological state, just like Van Gogh and his suicide letter. I like drawing female figures, it’s like home and my motherland, like Syria. I cannot think of one object for my soul relics, there’re birds, old valuable pieces, friends, parents, computers, but I left with nothing. `,
+  },
+  {
+    id: 30,
+    title: 'Firework',
+    name: 'anonymous',
+    image: 'doll.jpg',
+    filter:'refugee',
+    story: `My memory of the war - I remember the night we decided to leave Syria was when there were a lot of loud bombings, the electricity was cut off, it was very dark. We didn’t know what’s happening outside. My children asked me what the sound was, I told them, it was the firework. `,
+  },
 
   
 ];// append each image with the directory
