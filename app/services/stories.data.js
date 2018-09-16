@@ -300,7 +300,7 @@ It now represents freedom and hope to me :)
    id: 29,
     title:'Mother',
     name: 'anonymous',
-    image: 'girl,jpg',
+    image: 'girl.jpg',
     filter:'refugee',
     story: `I am a refugee from Syria and I left in 2014. Drawing allows you to express your psychological state, just like Van Gogh and his suicide letter. I like drawing female figures, it’s like home and my motherland, like Syria. I cannot think of one object for my soul relics, there’re birds, old valuable pieces, friends, parents, computers, but I left with nothing. `,
   },
