@@ -312,7 +312,25 @@ It now represents freedom and hope to me :)
     filter:'refugee',
     story: `My memory of the war - I remember the night we decided to leave Syria was when there were a lot of loud bombings, the electricity was cut off, it was very dark. We didn’t know what’s happening outside. My children asked me what the sound was, I told them, it was the firework. `,
   },
+  {
+    id: 31,
+    title: 'Sophia',
+    name: 'Melissa',
+    image:'sophia.jpg',
+    filter:'tech',
+    story: `When I first read the story about Sophia the robot, I was chilled to the bone. She's the first A.I. to be given citizenship, and she had said in a previous interview that she wanted to kill all humans. In this most recent interview, she smiled pleasantly and said that she loves humans. I couldn't help but think that she had learnt how to lie, and developed a pervasive fear of A.I. Later, I realised that even if A.I. were sentient as us, and capable of evil as us, there would be good, humane A.I. as there would be evil destructive A.I. It didn't remove the danger, but it made it less terrifying thinking that we already faced threats from evil humans anyway. Sometimes, it's hard to tell apart delusion from actual danger. Elon Musk fears A.I. and he's a man of great credibility when it comes to technology. I'm definite that many of my delusions have been irrational, but the fact that we live in a time of great uncertainty makes it hard to tell. 
+    Photo credit: Flickr/AI for GOOD Global Summit, CC BY`,
+  },
+  {
+    id: 32,
+    title: 'A red jacket',
+    name: 'Melissa',
+    image: 'jacket.jpg',
+    filter:'relationship',
+    story:`I once stayed with a group of artists in their 20s in Oakland, the Bay area. I was particularly close to this guy named Josh. He commented on my red jacket (the one pictured was found on the internet, similar to the one I had), saying he liked it and that it was "very sci-fi". A month later, I acted as a stunt zombie on a movie. I wore my red jacket and had to run through the rain with an axe and get shot. I was very proud of that jacket from that day on because it'd been worn by a zombie in a movie. When I next saw him, he commented on the mud on the sleeves from that rainy day on the shoot. A couple months later, I left the Bay because I experienced psychosis. Josh packed my things and brought me to the hospital, carrying me on his back. When I got out, I had to pack my things and go back home to Singapore. I couldn't find the red jacket anywhere I looked. I emailed Josh about it and he didn't reply. I kept sending him emails asking him for the jacket and even plotted on how I could get the jacket back. Could I fly to Oakland and sneak in his bedroom and retrieve it while he was asleep? Could I send an empty box and ask him to return the jacket in that box? I was obsessed with that jacket. Now I think the jacket was a symbol for something - my independence. When my independence was taken away from me and I had to go back home to live with my parents, I blamed Josh for it because he took me to the hospital. And so Josh had my jacket. Who knows? Maybe he does. But this story sure isn't really about the jacket. `
+  } 
 
+  
   
 ];// append each image with the directory
 stories.forEach((s) => {
