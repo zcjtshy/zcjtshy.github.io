@@ -7,6 +7,7 @@ var storiesComponentController = [function(){
 export default {
   bindings: {
     stories: '=',
+    description: '=',
   },
   template: storiesTemplate,
   controller: storiesComponentController

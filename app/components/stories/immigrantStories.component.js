@@ -1,12 +1,12 @@
 import storiesTemplate from './stories.component.html';
 
-var description = "Copy for mental health stories."
+var description = "Copy for immigrant stories."
 
-var storiesComponentController = ['storiesService', function(storiesService){
+var storiesComponentController = ['immigrantStoriesService', function(immigrantStoriesService){
   var $ctrl = this;
   $ctrl.stories = [];
   $ctrl.description = description;
-  storiesService.getStories().then(stories => {
+  immigrantStoriesService.getStories().then(stories => {
     $ctrl.stories = stories;
   });
 }];
