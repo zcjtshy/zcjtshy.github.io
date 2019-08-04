@@ -1,4 +1,7 @@
 import { requireImage } from '../webpack-require';
+
+var description = 'Copy for mental health stories.';
+
 var stories = [
   {
     id: 0,
@@ -317,4 +320,9 @@ It now represents freedom and hope to me :)
 ];// append each image with the directory
 stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);
-});export default stories;
+});
+
+export default {
+  stories,
+  description,
+};

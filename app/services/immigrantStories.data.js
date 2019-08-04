@@ -1,4 +1,7 @@
 import { requireImage } from '../webpack-require';
+
+var description = 'Copy for immigrant stories.';
+
 var stories = [
   {
     id:0,
@@ -23,7 +26,7 @@ stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);
 });
 
-export default stories;
-
-
-
+export default {
+  stories,
+  description,
+};
