@@ -3,7 +3,8 @@ import navTemplate from './nav.component.html';
 function navController(){
   this.navs = {
     "Home": "home",
-    "Stories": "stories",
+    "Mental Health stories": "stories",
+    "Immigrant stories": "immigrantStories",
     "Other stories": "otherStories",
     "About Us": "aboutUs"
   };
