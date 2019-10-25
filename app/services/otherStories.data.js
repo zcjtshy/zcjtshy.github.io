@@ -1,4 +1,7 @@
 import { requireImage } from '../webpack-require';
+
+var description = 'Copy for other stories.';
+
 var stories = [
   {
     id:1,
@@ -174,8 +177,9 @@ We were at sea for almost two weeks, running out of food and water, before we we
 ];// append each image with the directory
 stories.forEach((s) => {
   if(s.image) s.image = requireImage(s.image);
-});export default stories;
+});
 
-
-
-
+export default {
+  stories,
+  description,
+};

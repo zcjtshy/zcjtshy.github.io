@@ -1,10 +1,12 @@
-import storiesTemplate from './otherStories.component.html';
+import storiesTemplate from './stories.component.html';
 
 var storiesComponentController = ['otherStoriesService', function(otherStoriesService){
   var $ctrl = this;
   $ctrl.stories = [];
-  otherStoriesService.getStories().then(stories => {
-    $ctrl.stories = stories;
+  $ctrl.description = '';
+  otherStoriesService.getStories().then(data => {
+    $ctrl.stories = data.stories;
+    $ctrl.description = data.description;
   });
 }];
 

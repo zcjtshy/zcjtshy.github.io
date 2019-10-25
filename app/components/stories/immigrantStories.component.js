@@ -1,10 +1,10 @@
 import storiesTemplate from './stories.component.html';
 
-var storiesComponentController = ['storiesService', function(storiesService){
+var storiesComponentController = ['immigrantStoriesService', function(immigrantStoriesService){
   var $ctrl = this;
   $ctrl.stories = [];
   $ctrl.description = '';
-  storiesService.getStories().then(data => {
+  immigrantStoriesService.getStories().then(data => {
     $ctrl.stories = data.stories;
     $ctrl.description = data.description;
   });
