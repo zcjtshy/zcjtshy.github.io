@@ -1,6 +1,6 @@
 import { requireImage } from '../webpack-require';
 
-var description = 'Copy for mental health stories.';
+var description = '';
 
 var stories = [
   {
