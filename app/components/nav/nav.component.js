@@ -4,7 +4,7 @@ function navController(){
   this.navs = {
     "Home": "home",
     "Mental Health stories": "stories",
-    "Immigrant stories": "immigrantStories",
+    "Vietnamese and Chinese Migrants in London stories": "immigrantStories",
     "Other stories": "otherStories",
     "About Us": "aboutUs"
   };
