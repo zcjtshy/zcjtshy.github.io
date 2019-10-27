@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pushstate-server . $PORT",
+    "start": "pushstate-server -d . $PORT",
     "start:dev": "lite-server",
     "build": "webpack --mode development",
     "build:min": "webpack  --mode production",
