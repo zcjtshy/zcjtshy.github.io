@@ -1,6 +1,6 @@
 import { requireImage } from '../webpack-require';
 
-var description = '';
+var description = 'The project was funded by the Mayor of London Culture Seeds Programme between Feb-August 2019, exploring migration stories from Chinese and Vietnamese migrants in London and the relationship between the stories and wellbeing';
 
 var stories = [
   {
@@ -180,33 +180,33 @@ Tôi thích học tiếng Anh, tôi học nó hằng ngày bằng cách sử d�
 
 Đây là từ “hạnh phúc”, cuộc sống hạnh phúc. Tiếng Việt nó có nghĩa là “sung sướng”, “hạnh phúc”. “Sung sướng” là vật chất và “hạnh phúc” là tinh thần. Đôi khi tôi ước mình hiểu tiếng Anh hoàn toàn nhưng giờ thì tôi hạnh phúc, tô là người “nửa Anh nửa Việt”.`
   },
-//   {
-//     id: 12,
-//     title:'Martial arts and wellbeing',
-//     name:'Xuan',
-//     image:'martialart.jpg',
-//     filter:['SREA'],
-//     story:`I was born in Vietnam. I left when I was 4. Born in 1973, when the war almost ended. 
-// Object 1: Photo of Hong Kong
-// Memory of Vietnam. I can only vaguely remember, it’s like a dream. I remember myself and my brother, being kept indoors, when my parents were working. We were locked inside the house. I had images of the house, of a fan, ceiling, maybe just images of trying to reach a shelf and things falling down, but then apart from 5 or 6 images, I don’t remember much when I was 4 years old. Then I remember the image of inside the boat, it was very dark, and then from then on, my parents said we spent 6 months in China, before going to Hong Kong. I got more memory of Hong Kong. This is when I was about 5 or 6 in Hong Kong, when we were in a refugee camp. My dad was working on a building site, my mum made Vietnamese pastries to sell on the street. My brother and I sat on the street and sold the pastry to the passers-by. The other thing was collecting Chinese manga magazines. They would pay like an equivalent of 1p or something like that. We did whatever we could to keep ourselves busy, but there was a curfew, we had to be back to the camp by 10 pm or something like that. We were classed as the boat people, refugees from Vietnam. It wasn’t unhappy. (1980)
+   {
+    id: 12,
+    title:'Martial arts and wellbeing',
+    name:'Xuan',
+    image:'martialart.jpg',
+    filter:['SREA'],
+    story:`I was born in Vietnam. I left when I was 4. Born in 1973, when the war almost ended. 
+ Object 1: Photo of Hong Kong
+Memory of Vietnam. I can only vaguely remember, it’s like a dream. I remember myself and my brother, being kept indoors, when my parents were working. We were locked inside the house. I had images of the house, of a fan, ceiling, maybe just images of trying to reach a shelf and things falling down, but then apart from 5 or 6 images, I don’t remember much when I was 4 years old. Then I remember the image of inside the boat, it was very dark, and then from then on, my parents said we spent 6 months in China, before going to Hong Kong. I got more memory of Hong Kong. This is when I was about 5 or 6 in Hong Kong, when we were in a refugee camp. My dad was working on a building site, my mum made Vietnamese pastries to sell on the street. My brother and I sat on the street and sold the pastry to the passers-by. The other thing was collecting Chinese manga magazines. They would pay like an equivalent of 1p or something like that. We did whatever we could to keep ourselves busy, but there was a curfew, we had to be back to the camp by 10 pm or something like that. We were classed as the boat people, refugees from Vietnam. It wasn’t unhappy. (1980)
 
-// Object 2: Parent’s house
-// My grandparents, my uncles and my family decided to come to the UK. We came in the winter, it was freezing cold, it was first time I saw snow. We were placed in a temporary housing in Southampton, but my parents didn’t like it. We asked to move to a place with more Asian families, so we requested to come to London. After 3 months, we moved to Islington. 1982. My parents still lived in the house we were in. I didn’t know much about Hackney at that time, probably in my 20s then I started to realise there were other communities in Lewisham, the docklands etc. 
-// I feel very grateful for having the opportunity to move. I have been back to China, I have met some of my families in China, and they said they regretted staying in China, their children have never left China, and they have seen us coming back, and we have so much knowledge and understanding, have a little bit of wealth, got opportunity to travel, to see things, whereas their children were stuck in China.  I guess my British history starts in London, not in Southampton. Before that I was just like a parcel being carried by my father. 
-// My home has always been my parent's place, when we first moved in Islington in London. Everything else was just temporary. I lost the Vietnamese language when I left at 4. We speak Cantonese at home. I have been back to China a few times, but not Vietnam. Home would be here, in London. 
-// Object 3: Singapore noodles 
-// I have never had a problem mixing with different types of people. it's only when I started my business with my father, I realised I guess, the catering business, will kill your social life, you stopped seeing your friends, seeing interesting people, all you think is your business, how to make it more efficient. I guess that period from 1995 for about 15 years, I was losing them. you started isolating yourself, you feel more vulnerable. the English people, the Black, the Asians, they become more foreign. When you run a Chinese catering business, you start to develop a distance. It was for my family, but it wasn't good for my mental health. I have experienced racism in my youth but it didn’t feel that strong. When I ran my own business, and I stopped seeing my friends, then you became more sensitive, any little racism, discrimination, you became more vulnerable, it affects you more, you feel like a target.
-// Would I do it again? I would if it's for my family, if my family wants to do a business. But I wouldn't expect my children to give up what I had to give up.
+Object 2: Parent’s house
+My grandparents, my uncles and my family decided to come to the UK. We came in the winter, it was freezing cold, it was first time I saw snow. We were placed in a temporary housing in Southampton, but my parents didn’t like it. We asked to move to a place with more Asian families, so we requested to come to London. After 3 months, we moved to Islington. 1982. My parents still lived in the house we were in. I didn’t know much about Hackney at that time, probably in my 20s then I started to realise there were other communities in Lewisham, the docklands etc. 
+I feel very grateful for having the opportunity to move. I have been back to China, I have met some of my families in China, and they said they regretted staying in China, their children have never left China, and they have seen us coming back, and we have so much knowledge and understanding, have a little bit of wealth, got opportunity to travel, to see things, whereas their children were stuck in China.  I guess my British history starts in London, not in Southampton. Before that I was just like a parcel being carried by my father. 
+My home has always been my parent's place, when we first moved in Islington in London. Everything else was just temporary. I lost the Vietnamese language when I left at 4. We speak Cantonese at home. I have been back to China a few times, but not Vietnam. Home would be here, in London. 
+Object 3: Singapore noodles 
+I have never had a problem mixing with different types of people. it's only when I started my business with my father, I realised I guess, the catering business, will kill your social life, you stopped seeing your friends, seeing interesting people, all you think is your business, how to make it more efficient. I guess that period from 1995 for about 15 years, I was losing them. you started isolating yourself, you feel more vulnerable. the English people, the Black, the Asians, they become more foreign. When you run a Chinese catering business, you start to develop a distance. It was for my family, but it wasn't good for my mental health. I have experienced racism in my youth but it didn’t feel that strong. When I ran my own business, and I stopped seeing my friends, then you became more sensitive, any little racism, discrimination, you became more vulnerable, it affects you more, you feel like a target.
+Would I do it again? I would if it's for my family, if my family wants to do a business. But I wouldn't expect my children to give up what I had to give up.
 
-// Object 4: Letter from first kungfu teacher 
+Object 4: Letter from first kungfu teacher 
 
-// In my work in the bank, I have gone up to the managerial level. It was stressful and there was stress in my eye, and I was getting blackouts. I literally had a blackout, once a month. One time I had to go home, I must have blacked out in the office, a few times. So I said, something had to change. I gave up my job in the bank because it wasn't healthy for me, wasn't healthy for my relationship. 
+In my work in the bank, I have gone up to the managerial level. It was stressful and there was stress in my eye, and I was getting blackouts. I literally had a blackout, once a month. One time I had to go home, I must have blacked out in the office, a few times. So I said, something had to change. I gave up my job in the bank because it wasn't healthy for me, wasn't healthy for my relationship. 
 
-// I don't want to slow down, I want to keep training, to keep my mind fresh, to be as I was when I was in my late 20s, 30s. When I was 15, I learnt martial arts in the youth club. I started going to the youth club when I was 8, or 9. They had funding to do sports, calligraphy. My teacher, still my teacher now. It was only when I was working full-time then I started to slow down. When I was working in the bank, I didn't do any training, and it was affecting my health, my mental health. I became very stressed, kind of lost in a way. So, in the past 3-4 years I have gone back into it, quite intensely. 
+I don't want to slow down, I want to keep training, to keep my mind fresh, to be as I was when I was in my late 20s, 30s. When I was 15, I learnt martial arts in the youth club. I started going to the youth club when I was 8, or 9. They had funding to do sports, calligraphy. My teacher, still my teacher now. It was only when I was working full-time then I started to slow down. When I was working in the bank, I didn't do any training, and it was affecting my health, my mental health. I became very stressed, kind of lost in a way. So, in the past 3-4 years I have gone back into it, quite intensely. 
 
-// Last year we were approached by Jabez, Jabez is my late father-in-law’s friend. Jabez has taken over running of the Chinese community centre in Hackney. He saw that there's an opportunity to move to An Viet house to do things, so he called us in to do a few projects with young people in Hackney. We saw that the An Viet house has a lot of potential to become a community centre whilst we can go in there, to do some events, to do some training, to do some festivals, events, not just martial arts, but also carnivals, festivals, to produce costumes, to apply for funding for the arts to do activities.
-// `
-//   },
+Last year we were approached by Jabez, Jabez is my late father-in-law’s friend. Jabez has taken over running of the Chinese community centre in Hackney. He saw that there's an opportunity to move to An Viet house to do things, so he called us in to do a few projects with young people in Hackney. We saw that the An Viet house has a lot of potential to become a community centre whilst we can go in there, to do some events, to do some training, to do some festivals, events, not just martial arts, but also carnivals, festivals, to produce costumes, to apply for funding for the arts to do activities.
+`
+},
   {
     id: 13,
     title:'A group photo in China',
