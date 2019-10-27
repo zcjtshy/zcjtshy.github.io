@@ -1,6 +1,6 @@
 import { requireImage } from '../webpack-require';
 
-var description = 'Copy for other stories.';
+var description = '';
 
 var stories = [
   {
