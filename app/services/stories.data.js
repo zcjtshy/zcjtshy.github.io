@@ -277,7 +277,7 @@ I handle some of my stones almost everyday, anchoring to these in a meditative a
     id:28,
     title: 'My Oyster Card',
     name: 'The Depressed Baker',
-    image: 'oyster.JPG',
+    image: 'oyster.jpg',
     filter:['suicide'],
     story: `2 years ago
 
@@ -296,8 +296,7 @@ Today
 
 I have used my oyster card to deliver a batch of biscuits, and it forms a necessary part to the strategy that I am trying to implement to change my life, and also hopefully the lives of others too:)
 
-It now represents freedom and hope to me :) 
-`,
+It now represents freedom and hope to me :)`
   },
   {
    id: 29,
@@ -322,7 +321,7 @@ It now represents freedom and hope to me :)
     image:'sophia.jpg',
     filter:'tech',
     story: `When I first read the story about Sophia the robot, I was chilled to the bone. She's the first A.I. to be given citizenship, and she had said in a previous interview that she wanted to kill all humans. In this most recent interview, she smiled pleasantly and said that she loves humans. I couldn't help but think that she had learnt how to lie, and developed a pervasive fear of A.I. Later, I realised that even if A.I. were sentient as us, and capable of evil as us, there would be good, humane A.I. as there would be evil destructive A.I. It didn't remove the danger, but it made it less terrifying thinking that we already faced threats from evil humans anyway. Sometimes, it's hard to tell apart delusion from actual danger. Elon Musk fears A.I. and he's a man of great credibility when it comes to technology. I'm definite that many of my delusions have been irrational, but the fact that we live in a time of great uncertainty makes it hard to tell. 
-    Photo credit: Flickr/AI for GOOD Global Summit, CC BY`,
+    Photo credit: Flickr/AI for GOOD Global Summit, CC BY`
   },
   {
     id: 32,
@@ -330,7 +329,15 @@ It now represents freedom and hope to me :)
     name: 'Melissa',
     image: 'jacket.jpg',
     filter:'relationship',
-    story:`I once stayed with a group of artists in their 20s in Oakland, the Bay area. I was particularly close to this guy named Josh. He commented on my red jacket (the one pictured was found on the internet, similar to the one I had), saying he liked it and that it was "very sci-fi". A month later, I acted as a stunt zombie on a movie. I wore my red jacket and had to run through the rain with an axe and get shot. I was very proud of that jacket from that day on because it'd been worn by a zombie in a movie. When I next saw him, he commented on the mud on the sleeves from that rainy day on the shoot. A couple months later, I left the Bay because I experienced psychosis. Josh packed my things and brought me to the hospital, carrying me on his back. When I got out, I had to pack my things and go back home to Singapore. I couldn't find the red jacket anywhere I looked. I emailed Josh about it and he didn't reply. I kept sending him emails asking him for the jacket and even plotted on how I could get the jacket back. Could I fly to Oakland and sneak in his bedroom and retrieve it while he was asleep? Could I send an empty box and ask him to return the jacket in that box? I was obsessed with that jacket. Now I think the jacket was a symbol for something - my independence. When my independence was taken away from me and I had to go back home to live with my parents, I blamed Josh for it because he took me to the hospital. And so Josh had my jacket. Who knows? Maybe he does. But this story sure isn't really about the jacket. `
+    story:`I once stayed with a group of artists in their 20s in Oakland, the Bay area. I was particularly close to this guy named Josh. He commented on my red jacket (the one pictured was found on the internet, similar to the one I had), saying he liked it and that it was "very sci-fi". A month later, I acted as a stunt zombie on a movie. I wore my red jacket and had to run through the rain with an axe and get shot. I was very proud of that jacket from that day on because it'd been worn by a zombie in a movie. When I next saw him, he commented on the mud on the sleeves from that rainy day on the shoot. A couple months later, I left the Bay because I experienced psychosis. Josh packed my things and brought me to the hospital, carrying me on his back. When I got out, I had to pack my things and go back home to Singapore. I couldn't find the red jacket anywhere I looked. I emailed Josh about it and he didn't reply. I kept sending him emails asking him for the jacket and even plotted on how I could get the jacket back. Could I fly to Oakland and sneak in his bedroom and retrieve it while he was asleep? Could I send an empty box and ask him to return the jacket in that box? I was obsessed with that jacket. Now I think the jacket was a symbol for something - my independence. When my independence was taken away from me and I had to go back home to live with my parents, I blamed Josh for it because he took me to the hospital. And so Josh had my jacket. Who knows? Maybe he does. But this story sure isn't really about the jacket.`
+  },
+  {
+    id: 33,
+    title: 'pandemic yoga',
+    name: 'Shehani',
+    image: 'yoga.jpg',
+    filter: 'pandemic',
+    story: `Around Feb 2020 I experienced bouts of anxiety over my final year thesis and future plans. It made me feel breathless and made my heart beat raise. It was different from other times I had felt anxious, which was mostly feelings of butterflies in my stomach. With my 2020 anxiety, it was more physiological and I couldn’t just shrug it off. My relic reminding me of these times is my yoga mat, an accidental encounter that helped me through my anxiety. Practicing 30 days of yoga with a YouTuber called Adriene helped me regulate my heart rate and breath. I felt more in control when I experienced anxiety. It helped me just enough to cope and get through.`
   } 
 
   
