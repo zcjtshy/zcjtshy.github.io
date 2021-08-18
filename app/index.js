@@ -11,6 +11,7 @@ const services = {
   'storiesService': requireService('stories.service'),
   'otherStoriesService': requireService('otherStories.service'),
   'immigrantStoriesService': requireService('immigrantStories.service'),
+  'hcwStoriesService': requireService('hcwStories.service'),
 };
 
 Object.keys(services).forEach(name => app.service(name, services[name]));
@@ -34,6 +35,7 @@ const components = {
   'srStoriesPresentational':  requireComponent('stories/stories.presentational.component'),
   'srStories':                requireComponent('stories/stories.component'),
   'srImmigrantStories':       requireComponent('stories/immigrantStories.component'),
+  'srHcwStories':             requireComponent('stories/hcwStories.component'),
   'srOtherStories':           requireComponent('stories/otherStories.component'),
   'srStorySubmission':        requireComponent('stories/storySubmission.component'),
   'srStory':                  requireComponent('stories/story.component'),

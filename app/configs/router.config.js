@@ -16,6 +16,11 @@ export default ['$stateProvider', '$urlRouterProvider', function($stateProvider,
       component: 'srImmigrantStories'
     },
     {
+      name: 'hcwStories',
+      url: '/hcwStories',
+      component: 'srHcwStories'
+    },
+    {
       name: 'otherStories',
       url: '/otherStories',
       component: 'srOtherStories'
