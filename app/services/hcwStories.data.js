@@ -102,7 +102,7 @@ Working in mental health can be overwhelming, getting into the water has been a 
 Surfing is a lot about balancing, so as our life. Maintaining some sort of balance has given me the best sensation when I catch a wave, as well as the sustainability for me to carry on with my work.
 
 Words to the healthcare workers community:
-In our work, it is easy to lose ourselves in the ocean of responsibilities and the urgencies of others. Prioritise and don’t forget your own self, find your own way to stay balance so that you can ride along the waves of stress.
+In our work, it is easy to lose ourselves in the ocean of responsibilities and the urgencies of others. Prioritise and don not forget your own self, find your own way to stay balance so that you can ride along the waves of stress.
 `,
   },
   {
