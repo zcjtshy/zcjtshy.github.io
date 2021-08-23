@@ -12,5 +12,5 @@ var storiesComponentController = ['hcwStoriesService', function(hcwStoriesServic
 
 export default {
   template: storiesTemplate,
-  controller: storiesComponentController
+  controller: storiesComponentController,
 };
