@@ -1,6 +1,6 @@
 import { requireImage } from '../webpack-require';
 
-var description = 'An interational collaboration between Soul Relics Museum, LAGOM and Platform Med. Please submit your story to our google form <a target="_blank" href="https://forms.gle/c9rt9Gh46MjYZBW26">https://forms.gle/c9rt9Gh46MjYZBW26</a> ';
+var description = 'An interational collaboration between Soul Relics Museum, <a target="_blank" href=" https://lagomwellbeing.com/">LAGOM</a> and <a target="_blank" href=" https://info.platform-med.org/">Platform</a>. Please submit your story to our google form <a target="_blank" href="https://forms.gle/c9rt9Gh46MjYZBW26">https://forms.gle/c9rt9Gh46MjYZBW26</a> ';
 
 var stories = [
   {
@@ -94,7 +94,7 @@ In a twist of irony, years later I am now really interested in diy electronics. 
   {
    id: 7,
     title:'Waves',
-    name: 'K',
+    name: 'K from the UK',
     image: 'lagomsurf.jpg',
     filter:'coping',
     story: `This is the very first surfboard I have ever own and it has taken me into various seas and ocean. It is a important tool for self-care, a symbol of the blue mind.
@@ -130,7 +130,65 @@ One day I was on my sofa at home, feeling numb and empty, when my dog jumped up 
     name: 'anonymous (a fresh doctor)',
     image: 'lagomdr.jpg',
     filter:'burnout',
-    story: `Being a med student, being a doctor.. it changes the way you look at the world. People always talk about what a blessing it must be to be able to help someone in their most dire times- I don’t deny that, but a lot of people fail to notice how much more pain there is to it. Seeing so much suffering everyday is not a blessing, it takes courage that I sometimes cannot muster [master]. As much as you get to save lives, you’re also the one holding someone’s hand while they take their last breath. You think you get used to it, that you get used to parents asking if their child could somehow defeat a metastatic cancer or snap out of a bed-bound disability, but you don’t. Every day is another day staring death in the eyes and bargaining for a fair deal, and I think now more than ever we’ve been outwitted. When you’re so intimate with morbidity and mortality, the way you look at the world changes. It’s hard to see the glitter in the grime, and yet we must- because if we lose hope, there’s no one else the world can turn to. The way you look at the world changes forever.. this perception, this survivor’s guilt, it’s always chasing you- how do I get to wake up healthy and fine each day with nothing but a heavy heart, while so many around me can’t even do that?`,
+    story: `Being a med student, being a doctor.. it changes the way you look at the world. People always talk about what a blessing it must be to be able to help someone in their most dire times- I do not deny that, but a lot of people fail to notice how much more pain there is to it. Seeing so much suffering everyday is not a blessing, it takes courage that I sometimes cannot muster [master]. As much as you get to save lives, you are also the one holding a hand of another person while they take their last breath. You think you get used to it, that you get used to parents asking if their child could somehow defeat a metastatic cancer or snap out of a bed-bound disability, but you do not. Every day is another day staring death in the eyes and bargaining for a fair deal, and I think now more than ever we have been outwitted. When you are so intimate with morbidity and mortality, the way you look at the world changes. It is hard to see the glitter in the grime, and yet we must- because if we lose hope, there is no one else the world can turn to. The way you look at the world changes forever.. this perception, this survivor guilt, it is always chasing you- how do I get to wake up healthy and fine each day with nothing but a heavy heart, while so many around me cannot even do that?`,
+  },
+  {
+   id: 11,
+    title:'Tranquility',
+    name: 'Dr Andrew Jones from the US',
+    image: 'lagomelysium.jpg',
+    filter:'peer support',
+    story: `I chose this image because when I speak to other people with anxiety and depression along with other mental disorders. There is a sense of calmness that surrounds me which helps me in helping other people.
+
+    Words to the Healthcare worker community: The past cannot be undone. The future is yours to decide. You cannot move forward if you keep looking back. You Are Not Alone. Millions of people feel the same way you do.`
+    ,
+  },
+  {
+   id: 12,
+    title:'Shifts',
+    name: 'pineapple pooper',
+    image: 'lagommoney.jpg',
+    filter:'burnout',
+    story: `Tremendous stress and negativity to my life. The lack of sleep and energy makes it a vicious circle. I would worry if I could finish my tasks in my shift, whether I leave things undone for my next shift, whether I make mistakes at work.
+
+    Words to the Healthcare worker community: Seek help if you really need. Quit if you really hate this job. Enjoy life. Don’t see your job as your whole identity. It is not worth it.`,
+  },
+  {
+   id: 13,
+    title:'Being a doctor',
+    name: 'anonymous from Hong Kong',
+    image: 'lagomthankyou.jpg',
+    filter:'gratitude',
+    story: `Recently I received a thank you card from one of my patients. Even though I do not know who gave me this card (according to hospital policy, the name of the patient has been crossed out), the joy I experienced upon receiving this was immeasurable. As healthcare workers, we were always taught to work selflessly and give without expecting anything in return. Facing such heavy patient load in the public setting, it is also impossible for us to remember every single one of our patients. Hence as time goes on, we forget that we are treating humans, and we treat each patient as just another case that comes and goes. But to our patients, we are one of the few if not the only doctor they have seen. I am forever grateful to the patient who sent me this card. It serves as a reminder that there is always a human side to every patient, that we should be treating patients not just diseases.`,
+  },
+  {
+   id: 14,
+    title:'A story of an ICU patient - story contribution from our partner - Platform NGO in Bangladesh',
+    name: 'Dr Mahmuda Hossain, Asst. Registrar, Cardiology, Bangladesh',
+    image: 'lagomplatform.jpg',
+    filter:'burnout',
+    story: `One of my patients on life support wrote these words.
+We need to keep these patients awake when on trial (life support). Usually, it is very distressing for the patients. 
+Many of them struggle without uttering a single word, and wait timelessly. They wonder when again they can talk, have something to drink. 
+While I was giving morning rounds, I found this paper in a file of a patient. I was about to keep this with me, later I thought as this patient would be fit to be discharged,  I would attach this to his discharge note. 
+I can feel every word of this note, what anxiety and emotions are behind. 
+From the core of my heart, I want him to be cured and he would return home. 
+For better understanding I am mentioning the words, 
+How is my youngest daughter? 
+I cannot sleep.
+Can you please give me medication?
+I will eat later on
+Mrs
+My bowel has not moved for the last three days.
+Please read my words. 
+Cough. 
+Suction 
+Breathlessness (written twice)
+Probably they will shift me to the cabin, will you stay with me?
+I feel restless.
+No they are not going to shift me to the cabin today
+Shall I stay here today?
+Nothing more to tell`,
   },
 ];// append each image with the directory
 
