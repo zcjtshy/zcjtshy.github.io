@@ -2,6 +2,7 @@ import { requireImage } from '../webpack-require';
 
 var description = 'An interational collaboration between Soul Relics Museum, <a target="_blank" href=" https://lagomwellbeing.com/">LAGOM</a> and <a target="_blank" href=" https://info.platform-med.org/">Platform</a>. Please submit your story to our google form <a target="_blank" href="https://forms.gle/c9rt9Gh46MjYZBW26">https://forms.gle/c9rt9Gh46MjYZBW26</a> ';
 
+
 var stories = [
   {
   	id: 1,
@@ -151,7 +152,7 @@ One day I was on my sofa at home, feeling numb and empty, when my dog jumped up 
     filter:'burnout',
     story: `Tremendous stress and negativity to my life. The lack of sleep and energy makes it a vicious circle. I would worry if I could finish my tasks in my shift, whether I leave things undone for my next shift, whether I make mistakes at work.
 
-    Words to the Healthcare worker community: Seek help if you really need. Quit if you really hate this job. Enjoy life. Don’t see your job as your whole identity. It is not worth it.`,
+    Words to the Healthcare worker community: Seek help if you really need. Quit if you really hate this job. Enjoy life. Don not see your job as your whole identity. It is not worth it.`,
   },
   {
    id: 13,
