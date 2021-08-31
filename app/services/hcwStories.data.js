@@ -1,6 +1,6 @@
 import { requireImage } from '../webpack-require';
 
-var description = 'An interational collaboration between Soul Relics Museum, LAGOM and Platform Med. Please submit your story to our google form https://forms.gle/c9rt9Gh46MjYZBW26 ';
+var description = 'An interational collaboration between Soul Relics Museum, LAGOM and Platform Med. Please submit your story to our google form <a target="_blank" href="https://forms.gle/c9rt9Gh46MjYZBW26">https://forms.gle/c9rt9Gh46MjYZBW26</a> ';
 
 var stories = [
   {
