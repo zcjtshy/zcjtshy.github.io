@@ -127,7 +127,7 @@ One day I was on my sofa at home, feeling numb and empty, when my dog jumped up 
   },
   {
    id: 10,
-    title:'Being a doctor',
+    title:'Being a newly-qualified doctor',
     name: 'anonymous (a fresh doctor)',
     image: 'lagomdr.jpg',
     filter:'burnout',
