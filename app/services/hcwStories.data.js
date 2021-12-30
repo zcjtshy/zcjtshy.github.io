@@ -191,6 +191,23 @@ No they are not going to shift me to the cabin today
 Shall I stay here today?
 Nothing more to tell`,
   },
+{
+  id: 15,
+    title:'Starvation and inequality',
+    name: 'Ron, a nurse in Yemen',
+    image: 'lagomkhobz.jpg',
+    filter:'war',
+    story: `My objects are Khobz Al Tawa, a Yemeni bread and the Khat leaves. Because of current crisis in Yemen, food is difficult for them to obtain, especially for women. Women are afraid to beg money on the street because it’s shameful.  However, I am getting lots of food from the canteens and restaurants and I find the stark discrepancy really saddening. On the other hand, I saw men begging for money, and instead of buying food, they use the money to buy khat, a narcotic leaf, to relieve them from stress.`
+  },
+  {
+  id: 16,
+    title:'Journalling',
+    name: 'Dr Annie Hickox, Consultant clinical neuropsychologist',
+    image: 'lagomahjournal.jpg',
+    filter:'depression',
+    story: `This journal has been my emotional counterbalance. There’s a lot of shaming within our profession about lived experiences and sometimes speaking out can be hard. However, I wanted to write and speak truthfully. The journal carries and steadies me. When I write and reflect, unconscious stuff comes up, and I remember things more vividly. My father had severe mental illness and psychosis, I had psychosis when I was young, and my two daughters have also suffered from depression and anxiety. Mental illness runs in my family, genetically and environmentally. My journal is like the ballast of a boat that keeps it from capsizing, and by writing in it I regain my equilibrium. When I read the entries, I can be in the present moment while reflecting on past experiences. Sometimes when you are depressed, you feel as though you haven’t been there before, that you’ve never felt worse, but when you look back at the journal you can see that you have been there before, and that things got better. Writing makes you braver. One of my daughters recently encouraged me to write about her story with OCD, so I am working on this now. I hope that sharing what we write can be an act of solidarity, so there are collective voices among mental health professionals.`
+  },
+  
 ];// append each image with the directory
 
 stories.forEach((s) => {
